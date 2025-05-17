@@ -1,0 +1,108 @@
+---
+layout: page
+# The Home page layout
+---
+<div class="post-content">
+      A Machine Learning (ML) pipeline configure the workflow of a
+  learning task using the APIs provided by ML libraries. However,
+  a pipeline’s performance can vary significantly across different
+  configurations of ML library versions. Misconfigured pipelines can
+  result in inferior performance, such as poor execution time and memory
+  usage, numeric errors and even crashes. A pipeline is subject
+  to misconfiguration if it exhibits significantly inconsistent performance
+  upon changes in the versions of its configured libraries or
+  the combination of these libraries. We refer to such performance
+  inconsistency as an pipeline configuration (PLC) issue.
+  <br>
+  <br>
+  There is no prior systematic study on the pervasiveness, impact
+  and root causes of PLC issues. A systematic understanding
+  of these issues helps configure effective ML pipelines and identify
+  misconfigured ones. In this paper, we present the first systematic
+  study of PLC issues. We propose <a href="https://piecer-plc.github.io/Piecer"><strong>Piecer</strong></a>, an infrastructure that automatically
+  generates a set of pipeline variants by varying different
+  version combinations of ML libraries and compares their performance
+  inconsistencies. We apply Piecer to the 3,380 pipelines that
+  can be deployed out of the 11,363 ML pipelines collected from multiple
+  ML competitions at Kaggle platform. The study results show
+  that 1,092 (32.3%) of the 3,380 pipelines manifest significant performance
+  inconsistencies on at least one variant. We find that 399,
+  243 and 440 pipelines can achieve better competition scores, execution
+  time and memory usage, respectively, by adopting a different
+  configuration. Based on our empirical findings, we constructed a
+  <a href="https://piecer-plc.github.io/Defective-Repository"><strong>repository</strong></a> containing 164 defective APIs and 106 API combinations
+  from 418 library versions, which helped us capture PLC issues in
+  <a href="https://piecer-plc.github.io/Empirical-Findings"><strong>309 real-world ML pipelines</strong></a>.
+
+</div>
+  <hr>
+  <div class="post-content">
+      <div class="logo">
+          <!-- <a href="https://piecer-plc.github.io/Piecer.html"> -->
+           <img src="/assets/images/tool.svg" alt="avatar" height="50" width="50">
+          <!-- </a> -->
+          <span>
+              <a href="https://piecer-plc.github.io/Piecer"><strong> A tool to automate analyzing ML library version combinations impacts.</strong></a><br>
+          </span>
+      </div>
+      <div class="logo">
+          <!-- <a href="https://piecer-plc.github.io/DAR.html"> -->
+           <img src="/assets/images/repository.svg" alt="avatar" height="50" width="50">
+          <!-- </a> -->
+          <span>
+              <a href="https://piecer-plc.github.io/Defective-Repository">
+              <strong>Defective API repository for detecting PLC issues.<br></strong> 
+          </a>
+          </span>
+      </div>
+      <div class="logo">
+          
+           <img src="/assets/images/libraries.svg" alt="avatar" height="50" width="50">
+          
+          <span>
+              <a href="https://piecer-plc.github.io/Empirical-Findings">
+                  <strong>Empirical findings in ML libraries.<br></strong> 
+              </a>
+          </span>
+      </div>
+      <div class="logo">
+          <!-- <a href="https://piecer-plc.github.io/EPP.html"> -->
+           <img src="/assets/images/pipeline.svg" alt="avatar" height="50" width="50">
+          <!-- </a> -->
+          <span>
+              <a href="https://piecer-plc.github.io/Empirical-Findings">
+                  <strong>Empirical findings in ML Pipelines.<br></strong> 
+              </a>
+          </span>
+      </div>
+      <div class="logo">
+          
+           <img src="/assets/images/download.svg" alt="avatar" height="50" width="50">
+          
+          <span>
+              <a href="https://piecer-plc.github.io/Download-Datasets">
+                  <strong>Download the pipelines(labelled with workflow stages).<br></strong>
+              </a>
+          </span>
+      </div>
+
+  </div>
+  
+  <div id="d-help-win" class="d-help-win" style="display: none;">
+      <div id="win-title">Help
+          <span id="d-help-colse" clss="close_2" class="close_2">
+              × 
+          </span>
+      </div>
+      <div id="win-content">
+          <blockquote class="prompt-tip"><div><p> We provide a list of PLC issues captured by us in real-world pipelines and popular ML libraries.</p></div></blockquote>
+          <div>
+              <ol>
+                  <li>Go to <strong><font color="#FF0000">Empirical Findings</font></strong> page</li>
+                  <li>Select a bug and click on <strong><font color="#FF0000">reproduce result link</font></strong>.</li>
+                  <li>You can find the reproduction results of each version and the related reproduction code.</li></ol>
+          </div>
+
+          <img src="/assets/images/Pipeline-Bug.gif" alt="avatar">
+      </div>
+  </div>

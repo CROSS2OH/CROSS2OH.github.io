@@ -1,0 +1,4186 @@
+---
+# layout: archives
+title: Empirical Findings ML Pipelines
+author: Anonymous
+---
+
+<blockquote class="prompt-info">
+  <div>
+    <strong>One ML Library</strong> : Performance Impacts Induced by One ML Library Version.
+  </div>
+  <div>
+    <strong>Type A</strong>: Indirect Dependency Interference.(Performance impacts induced by a combination of library versions)
+  </div>
+  <div>
+    <strong>Type B</strong>: Data Flow Interference.(Performance impacts induced by a combination of library versions)
+  </div>
+</blockquote>
+
+<div class="table-wrapper">
+                        <table id="data-table-basic" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Pipeline ID</th>
+        <th>Competition</th>
+        <th>Type</th>
+        <th>Library</th>
+        <!-- <th>Forks</th> -->
+        <th>Reproduce Results</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+        36634</td>
+        <td>
+        -</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://github.com/DzulJalali/Covid-Classification-Model/issues/1">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36642</td>
+        <td>
+        -</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://github.com/Sineme01/2001CB07_CS299_2022/issues/2">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34442</td>
+        <td>
+        TPS - OCT 2021</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/aayush26/tps-oct-2021-catboost-301-w-oof/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34789</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/abanobmorgan/xgboost-tabular-playground/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34801</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/abdelrahmanrabah/december-notebook-nn/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37360</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/abdelrahmanrabah/nn-kfold-model1/comments#2011069">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36600</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/abdulaziz04/simple-approach-using-xgbclassifier/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37261</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/abdullahkocak/fresh-duck-kaggler-tps-mar22/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36886</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/abhishek123maurya/tps-may-decoding-f-27/comments#2011139">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36728</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/aboriginal3153/ver-tps-mar-22-neural-network-with-pytorch/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33796</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/adityasharma01/simple-nn-tps-nov-21/comments#2014351">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33812</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/adityasharma01/tps-1121-dnn-v4/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34186</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/akihironomura/google-brain-lightgbm-optuna/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36316</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        lightgbm,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/akioonodera/tps-feb2022-lgbm-cls-multiclass/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37448</td>
+        <td>
+        TPS - Mar2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        lightgbm,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/akioonodera/tps-mar2022-lgbm-regression/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36143</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/akshayr009/tabular-playground-series1/comments#2014280">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37768</td>
+        <td>
+        TPS - Aug 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/alexandershumilin/tabular-playground-series-aug-2022-nn-keras/comments#2011102">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36711</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/alfamame/tps-may-2022-ann/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36306</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/alyalsamal/bagging-extra-tree/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31776</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/amaneamane/eda-ml-for-beginner/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33959</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/ambrosm/tpsnov21-001-support-vector-classification/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31920</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        catboost,sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/ameerhamza319/baseline-catboost-tps-jan-2k22/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33409</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/aniruddhapa/insurance-claim/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34328</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/anjalisrajan/tps-xgb-classifier-score-0-9591/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33247</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,numpy</td>
+        <td><a href = "
+        https://www.kaggle.com/code/arnabbiswas1/classification-approach-lgbm-log-loss/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        38216</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/arnavr10880/tensorflow-spaceship-titanic-with-keras/comments#2011063">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34215</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/artgor/ventilator-pressure-prediction-eda-fe-and-models/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36625</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/as411011/spaceship-titanic-with-tensorflow-eda/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36476</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/asmaabdolahpoor/tabular-playground-series-logistic-regression/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        38230</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/asyadayo/notebook22060e63c2/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34197</td>
+        <td>
+         Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/bakar31/vpp-basic-eda-and-baseline-model/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36146</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/bartmaciszewski/support-vector-machines/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34699</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/bennyfung/tps-dec-keras-nn-score-0-95586/comments#2011217">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33742</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/bennyfung/tps-nov-2021-nn/comments#2014370">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37913</td>
+        <td>
+         Spaceship Titanic</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/bessielee1/spaceship-titanic-lgb-xgb-catboost-gb-single0-805/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        11169</td>
+        <td>
+        TPS - OCT 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/bibhabasumohapatra/vanilla-random-forest-with-kfolds/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34116</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/bobber/nn-baseline-with-eda-and-predict-80-pressures/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36322</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/coenvalk/tps-feb-2022/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34198</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        Type 2</td>
+        <td>
+        xgboost,catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/craigmthomas/gb-vpp-stacked-starter/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33811</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML(Crash)</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/daking97/simple-nn/comments#2014397">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34159</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/danofer/ts-windows-feature-engineering-ventilators/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34243</td>
+        <td>
+        Store Sales - Time Series Forecasting</td>
+        <td>
+        OML</td>
+        <td>
+        xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/demko1/store-sales-using-a-hybrid-model/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        11166</td>
+        <td>
+        TPS - OCT 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,pandas</td>
+        <td><a href = "
+        https://www.kaggle.com/code/diwash1/tps-oct-2021-eda-model-with-lgbm/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37543</td>
+        <td>
+        TPS - Apr 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/dompero/fcn-for-time-series-classification/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34150</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/drastamat/lgbm-starter/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36237</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/dulithajayakodige/simple-ml-model-to-predict-bacteria-type/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36173</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/edoardoba/classify-bacteria-species-97-accuracy/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36174</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/egorovalexeyd/tps-2202-0-9878-trees-additional-bias/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33896</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/egorovalexeyd/tps-november-0-7461-ensemble-nn-lgbm-and-logreg/comments#2014390">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33372</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/emelda2021/0929-catboost-max-min/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32566</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/faridtaghiyev/pawpularity-regression-on-several-models/comments#2014375">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        11087</td>
+        <td>
+        Tabular Playground Series - Oct 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,pandas</td>
+        <td><a href = "
+        https://www.kaggle.com/code/farizhaykal/tps-oct-2021-eda-lightgbm-randomizedsearchcv/comments?scriptVersionId=77167443">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37059</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/felixscheffler/spaceship-titanic-with-keras/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37742</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/felixscheffler/spaceship-titanic-with-keras/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37764</td>
+        <td>
+        TPS - Aug 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/francescoliveras/tps-nn-v2-en-es/comments#2011098">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36333</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/gavisr/tpsfeb22-lgbm-for-beginners/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37552</td>
+        <td>
+        TPS - Apr 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/gopalgoyal612002/tps-apr-2022-lstm-model/comments#2011080">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37111</td>
+        <td>
+        TPS - Aug 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/gopalgoyal612002/tps-aug-xgboost-classifier-eda/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36199</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/gopalgoyal612002/tps-feb1-knn-for-beginners/comments#2029153">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36716</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/guillermofantoni/tabular-playground-series-binary-classification/comments#2011171">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33850</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/gulshanmishra/self-normalizing-neural-networks/comments#2014347">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36721</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/guptadikshant/tps-may-2022-nn-approach-2/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34658</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        Type 2</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/gustavfredrikson/tps-dec-21-fast-easy-95-4-using-catboost/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34474</td>
+        <td>
+        TPS - OCT 2021</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/hakanerdogan/tps-oct-2021-simple-code/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33398</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,numpy</td>
+        <td><a href = "
+        https://www.kaggle.com/code/haozhang607/tabular-playground-series-sep-2021/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36848</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/harshul23/tps-may-22-eda-interactions-fe-nn-99-5/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33603</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/heerendra/beginner-friendly-end-to-end/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33341</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/hideeplearner/random-forest-for-regression-competition/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31772</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/hikarumoriya/simple-catboost/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31773</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/himanshusirsat/tabular-play-jan22/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36616</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/hussainsalih/spaceship-titanic-model/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36502</td>
+        <td>
+        Store Sales - Time Series Forecasting</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/hytryidmitry/grocery-store-sales-prediciton/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        11195</td>
+        <td>
+        TPS - OCT 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,pandas</td>
+        <td><a href = "
+        https://www.kaggle.com/code/ibuki39/tps10-2021-simplestarter-by-beginner-0-76349/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36187</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/imnaho/predict-with-tensorflow-keras/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37297</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        xgboost,sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/imnaho/tps22-mar-predict-with-xgbregressor/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31883</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/isha20/tps-jan-2022-catboost-eda/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33274</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,numpy</td>
+        <td><a href = "
+        https://www.kaggle.com/code/jackmarsch/tps-08-lgbm-bayesian-optimization/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36471</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/japancolorado/introduction-and-tabular-playground-notebook/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33754</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML(crash)</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/jmcslk/tps-nov-2021-simple-single-nn-3/comments#2014367">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33171</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/joelpeter/gradient-boost-regressor-with-7-94-accuracy/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        11193</td>
+        <td>
+        TPS - OCT 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,numpy</td>
+        <td><a href = "
+        https://www.kaggle.com/code/joeywonpark/practice-eda-lgbmtps-oct/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34154</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/johngang/google-brain-lgb-xgb-cb/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36544</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/joshxmiller656/sklearn-catboost/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31975</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/junhyeok99/catboost-baseline/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33253</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/kamaljp/catboost-aug-tutorial/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36590</td>
+        <td>
+         Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/karlpetz/space-titanic-model-catboost/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33957</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 2</td>
+        <td>
+        shap,xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/kavehshahhosseini/tps-nov-2021-shap-values-with-xgboost/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37335</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/kimchanyoung/simple-random-forest-regression-using-gridsearch/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33431</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/kishorthakre/tabular-playground-s21-kaggle/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37112</td>
+        <td>
+        TPS - Aug 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/kostiantynlavronenko/tps-08-22-simple-mlp/comments#2029183">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34646</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/kreyttsfeldt/simple-keras-for-dec-2021-tabular-competition/comments#2011270">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33839</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/kritchais/nov21-classification-logistic-regression/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36209</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/leehomhuang/simple-k-neighbors/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31784</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/leesstephanie/tps-jan-2022-leesstephanie/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34650</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/liberatoryohan/tabular-playground-dec-21/comments#2011268">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34331</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/lirbig9712/random-forest-no-tune/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37343</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/longzhi/tps202203/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36907</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        keras,tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/lovroselic/may2022-ls/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34712</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,numpy</td>
+        <td><a href = "
+        https://www.kaggle.com/code/lucamassaron/lightgbm-with-multiclass-focal-loss/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33600</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        scikit-learn,numpy</td>
+        <td><a href = "
+        https://www.kaggle.com/code/lukaszborecki/tps-09-nn/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33857</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/makonori/tabular-nov2021-based-on-outlier-replace-keras/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34226</td>
+        <td>
+        Store Sales - Time Series Forecasting</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/manishyadav51/storesalesforecast/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37100</td>
+        <td>
+        TPS - Aug 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/manojkumars00/tps-aug-2022-complete-begin/comments?scriptVersionId=102853978#2011132">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33853</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/markosthabit/tbs-november-naive-bayes/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36649</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        scikit-learn,pandas</td>
+        <td><a href = "
+        https://www.kaggle.com/code/maulikbahri/latestnotebook19e076cb58/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36267</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/meowmeowmeowmeowmeow/deep-embedding-learning-knn-0-99-cv/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37061</td>
+        <td>
+        TPS - Aug 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/mhslearner/tps-aug-eda-keras-neural-network/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31785</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/mirenaborisova/tabular-playground-jan-2021-01/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33913</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/mmellinger66/functional-tensorflow-keras-starter-notebook/comments#2014345">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33910</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/mmellinger66/tps-nov-21-keras-tuner/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        11224</td>
+        <td>
+        TPS - OCT 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,pandas</td>
+        <td><a href = "
+        https://www.kaggle.com/code/mmellinger66/tps-oct-2021-basic-cv-lgbm/comments?scriptVersionId=78028844">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33329</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/mohamedbakrey/eda-for-tps-aug2021-and-visualized-and-make-prd/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32923</td>
+        <td>
+        -</td>
+        <td>
+        OML(Crash)</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/msvrao/notebook9c073ab6b4/comments#2014371">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33807</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/nafishamoin/tabular-playground-november-2021/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32518</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/nafiularaf/pawpularity-prediction/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37551</td>
+        <td>
+        TPS - Apr 2022</td>
+        <td>
+        Crash  OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/nahumsa/bidirectional-lstm-keras-tuner/comments#2011077">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36664</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/neerajkaroshi/tpsmay22/comments#2011192">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36670</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/neerajkaroshi/tpsmay22-v2-neural-network/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        38107</td>
+        <td>
+         Spaceship Titanic</td>
+        <td>
+        Type 2</td>
+        <td>
+        scikit-learn,category_encoders</td>
+        <td><a href = "
+        https://www.kaggle.com/code/nitibbgg/simple-spaceship-titanic-classification-79/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33915</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/ofirmazor/rainy-november-playground/comments#2014387">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37465</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/p7476762/gradient-boost-regression-predict-eda/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36264</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/p7476762/xg-extree-dl-3-model-prediciton/comments#2011249">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        38067</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pankajkumar2002/spaceship-titanic-with-tensorflow-eda/comments#2011064">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36336</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pasuvulasaikiran/lightgbm-basic/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36938</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        category_encoders</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pasuvulasaikiran/tps-may-nn-tf-model/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36284</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/paulreiners/bacteria-overfitting-and-underfitting/comments#2011245">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33776</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pavan9065/exploring-tps-nov-2021/comments#2014360">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36587</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pawelmag/simple-solution-with-0-80383-accuracy/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36274</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pelegshilo/knn-quickstart/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37284</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/peressim/tps-mar-2022-transformer-with-time2vec/comments#2011087">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31824</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        scikit-learn,xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/phuc16102001/tps-2022-xgboost/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        38020</td>
+        <td>
+        TPS - Aug 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        scikit-learn,pandas</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pmassouf/stacking-starter-score-0-58/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33395</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,pandas</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pradeepchandrasuyal/lightgbm-without-tuning/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33437</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,pandas</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pradeepchandrasuyal/outlier-handling-lgbm-without-hyprparameter-tuning/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31870</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/prateek1202/tps-jan2022/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34352</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pythonash/parallel-strategy-through-deep-learning-0-956/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36211</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/quamarequbal/tabular-playground-series-feb-2022/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37652</td>
+        <td>
+        Feedback Prize - Evaluating Student Writing</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rachanabisht/first-rf-model-for-text-classification/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37359</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rajnishkumar546/tps-mar2/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36727</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rajnishkumar546/tps-may/comments#2011160">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34187</td>
+        <td>
+         Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        Type 2</td>
+        <td>
+        xgboost,sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/ranjeetshrivastav/ventilator-pressure-prediction-xgboost/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36575</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        Type 2</td>
+        <td>
+        xgboost,sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/ratandeepgupta/ensemble-space/comments#2029179">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33939</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rayhanlahdji/tps-1121-naive-bayes-for-naive-souls/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37410</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        catboost,sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rbud613/tps-baseline-lgb-catboost/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33948</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/realtimshady/nov-baseline-mlp/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34327</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rhythmcam/optuna-basic-lgbmclassifier-best-model/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37426</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        catboost,sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rhythmcam/tps-mar-22-catboost-baseline/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36695</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/robertturro/neural-network-model/comments#2011187">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33668</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/robinbaldeo/notebookb8e6e27ba3/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        11094</td>
+        <td>
+        TPS - Oct 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/robinbaldeo/stacked-catboost-gbdt-and-goss/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36574</td>
+        <td>
+         Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rohandawar/titanic-spaceship-1-dl-version/comments#2011159">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33472</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        OML</td>
+        <td>
+        xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rsizem2/tps-09-21-simple-xgboost-model/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36169</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rudragujarathi/tps-feb-2022-bacteria-classification/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34367</td>
+        <td>
+        TPS - Oct 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/salama4ai/salama4ai-tabular-playground-series-oct-2021/comments#1988659">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37317</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        xgboost,sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/samu2505/xgboost-rocks/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33775</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/samuelcortinhas/tabular-regular-neural-network/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36893</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sanjaylalwani/tps-may22/comments#2011135">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33724</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/satoshiss/playground-series-nov-with-nn-model/comments#2014405">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34637</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/satoshiss/tps-december-nn-model/comments#2011274">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34463</td>
+        <td>
+        TPS - Oct 2021</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/semihuslu/tps-oct2021-catboost/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33138</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sergeyzemskov/tps-08-21-cross-val-catboost-eda/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37321</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        catboost,sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sfktrkl/tps-mar-2022/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36877</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sfktrkl/tps-may-2022-nn/comments#2011127">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33790</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sfktrkl/tps-nov-2021-nn/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33770</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sfktrkl/tps-nov-2021-nn-2/comments#2014364">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34177</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        Type 1</td>
+        <td>
+        numpy,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/shashimo/foolishly-implemented-what-i-learned-in-introml/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32835</td>
+        <td>
+        Jigsaw Rate Severity of Toxic Comments</td>
+        <td>
+        Type 1</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/shenurisumanasekara/jigsaw-toxic-comment/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34185</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/shivansh002/lgbm-lover-s/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36916</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/shravankoninti/baseline-xgboost-prediction/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33439</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        lightgbm,pandas</td>
+        <td><a href = "
+        https://www.kaggle.com/code/shreyaspj/tabular-playground-series-0-8181-auc/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32449</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sifatshikdar/predict-with-svm/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36563</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/simonhm/data-analyze-and-logistic-regression/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37124</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sindhuinti/tabular-comp/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33963</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/smita09/simple-logistic-regression-0-745/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34333</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/smritirani/tps-dec-21-eda-and-bagging-tree-classifier-95/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36650</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/soanmo/tpseries-may-2022-best-score/comments#2011196">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        11119</td>
+        <td>
+        TPS - Oct 2021</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sonicaprasad/tabular-playground-series/comments#2029085">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37832</td>
+        <td>
+        Spaceship Titanic</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sriramanush123/spaceshiptitanic/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36326</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/stpeteishii/tps0222-lgbm-predict-proba/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36124</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/stpeteishii/tps0222-visualize-importance/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34334</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/suddharshan/ensemble-catboost-xgboost-randomforest/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33797</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sudipg411/model-evaluation-tensorflow-decision-tree/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36153</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        scikit-learn,xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/suharkov/tps-feb-2022-with-xgboost-and-different-metrics/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33468</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sveneschlbeck/claim-upon-insurance-policy-prediction-random-fore/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        37403</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/syedhaideralizaidi/tabular-playground-series-march-22/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36252</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tatyy555/tps-feb-2022-bacteria-species-keras-conv1d/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34767</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/teckmengwong/simpleautonn-softmax/comments#2011258">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33878</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tqrahman/quick-dirty-baseline-with-tensorflow/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34374</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tqrahman/tensorflow-model-with-pca-and-skip-connection/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36214</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tqrahman/tf-deep-neural-network-w-kfold/comments#2011203">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36729</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tracyporter/may-22-binary-classification/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33837</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tunguz/tps-nov-2021-simple-linear-baseline/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36723</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/une510/tps-may-2022-lgbm-targetencoder-optuna/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36734</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/utkarshshukla2912/random-forest-baseline-classification/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33744</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 1</td>
+        <td>
+        pandas,scikit-learn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/willclare/dnn-and-kerastuner/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33659</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        Type 2</td>
+        <td>
+        scikit-learn,xgboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/willemtraupel/early-exploration-and-xgboost-benchmark/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36662</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/yasseinmahmoud/eda-feature-engineering-nn-prediction-may-2022/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34702</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/zhangcheche/tps-12-simple-keras-nn-baseline/comments#2011210">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        11180</td>
+        <td>
+        TPS - Oct 2021</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/rhythmcam/tps-10-21-auto-pipeline-randomforest/comments#2028708">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31900</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tylerjthomas9/julia-stacking-baseline-tps-jan2022/comments#2028712">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31947</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/vladlee/tps-jan2022-lgbm-optuna/comments#2028714">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        31997</td>
+        <td>
+        TPS - Jan 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tracyporter/jan-22-tabular-outlier/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32253</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/msueconalinaivanova/msuecon21-alina-ivanova/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32518</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        Type 2</td>
+        <td>
+        tensorflow,keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/nafiularaf/pawpularity-prediction/comments#2028719">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32560</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/skoushik/simple-random-forest-approach/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32566</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        Type 2</td>
+        <td>
+        tensorflow,keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/faridtaghiyev/pawpularity-regression-on-several-models/comments#2028732">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32607</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/osvaldomx/first-intent-pawpularity/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32923</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        Type 2</td>
+        <td>
+        tensorflow,keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/msvrao/notebook9c073ab6b4/comments#2028737">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32928</td>
+        <td>
+        Jigsaw Rate Severity of Toxic Comments</td>
+        <td>
+        Type 2</td>
+        <td>
+        tensorflow,keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/yashsingh012/notebook4bc71e382f/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33138</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sergeyzemskov/tps-08-21-cross-val-catboost-eda/comments#2028740">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33193</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/mitishaagarwal/tps-08-histgradient-boosting/comments#2028742">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33335</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/carlmcbrideellis/histogram-gradient-boost-starter-script/comments#2028743">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33721</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/nitishraj/tabular-playground-nov21-nn-with-keras/comments#2028744">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33724</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/satoshiss/playground-series-nov-with-nn-model/comments#2028746">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33742</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/bennyfung/tps-nov-2021-nn/comments#2028748">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33754</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/jmcslk/tps-nov-2021-simple-single-nn-3/comments#2028750">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33770</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sfktrkl/tps-nov-2021-nn-2/comments#2028751">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33811</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        Type 2</td>
+        <td>
+        tensorflow,keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/daking97/simple-nn/comments#2028752">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33812</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/adityasharma01/tps-1121-dnn-v4/comments#2028755">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33878</td>
+        <td>
+        Happywhale - Whale and Dolphin Identification</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/meenakshiramaswamy/tf-keras-mobilevit/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33886</td>
+        <td>
+        TPS - Nov 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/lonnieqin/tps-11-21-conv2d/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34068</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/manuelmasiello/ventilator-pressure-prediction-using-cnn/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36214</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tqrahman/tf-deep-neural-network-w-kfold/comments#2028762">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34332</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/peressim/tps-dec-2021-transformer/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34336</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/jhyeonlee/tensorflow-resdnn-playground-dec/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34352</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/pythonash/parallel-strategy-through-deep-learning-0-956/comments#2028770">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34767</td>
+        <td>
+        TPS - Dec 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/teckmengwong/simpleautonn-softmax/comments#2028771">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34923</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        joblib</td>
+        <td><a href = "
+        https://www.kaggle.com/code/dqhdqmcttdqx/hw-data-finetune-splits/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36172</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/vladlee/tps-feb-2022-lgbm/comments#2028773">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36252</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        tensorflow,keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/tatyy555/tps-feb-2022-bacteria-species-keras-conv1d/comments#2028780">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36187</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/takara0515/notebook4d8db1b735/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36557</td>
+        <td>
+         Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sasakic/spaceship-titanic-predicting-nan-by-lgbm/comments#2028783">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36624</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/sanjeevsahu/eda-and-modelling-beginner-intermediate/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36650</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/soanmo/tpseries-may-2022-best-score/comments#2028786">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36662</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        Type 2</td>
+        <td>
+        tensorflow,keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/yasseinmahmoud/eda-feature-engineering-nn-prediction-may-2022/comments#2028789">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36695</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        optuna</td>
+        <td><a href = "
+        https://www.kaggle.com/code/beezus666/tweedie-and-lgbm-tuning/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36879</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/ceruttivini/tpsmay22-eda-random-forest-w-tuning/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36907</td>
+        <td>
+        PetFinder.my - Pawpularity Contest</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/venkatkumar001/pawpularity-contest-baseline/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33160</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        keras</td>
+        <td><a href = "
+        https://www.kaggle.com/code/volkandl/what-if-the-data-was-an-image-cnn-usage/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33300</td>
+        <td>
+        TPS - Aug 2021</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/mohit12562/tps-aug-hierarchical-nn-classification-reg/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33378</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/loycelorenzo/tabular-playground-series-sep-2021/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34081</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        transformers</td>
+        <td><a href = "
+        https://www.kaggle.com/code/vothaibk/simple-lstm/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34098</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        transformers</td>
+        <td><a href = "
+        https://www.kaggle.com/code/adityaecdrid/private-ventilator-pressure-lstm-transformer/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        35781</td>
+        <td>
+        Google Brain - Ventilator Pressure Prediction</td>
+        <td>
+        OML</td>
+        <td>
+        eli5</td>
+        <td><a href = "
+        https://www.kaggle.com/code/kishalmandal/most-detailed-eda-tf-idf-viz/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        36487</td>
+        <td>
+        TPS - Feb 2022</td>
+        <td>
+        OML</td>
+        <td>
+        umap</td>
+        <td><a href = "
+        https://www.kaggle.com/code/dcrowd/xgboost-model-first-comp-keep-improving/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        34116</td>
+        <td>
+        TPS - Mar 2022</td>
+        <td>
+        OML</td>
+        <td>
+        lightgbm</td>
+        <td><a href = "
+        https://www.kaggle.com/code/slythe/fight-night-ml-vs-mathematical-modelling/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33913</td>
+        <td>
+        TPS - Apr 2022</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/ravi20076/tpsapr22-bootstrappingensemble-pipeline/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33877</td>
+        <td>
+        TPS - Apr 2022</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/chethanbr86/tabular-playground-april2022-v3/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33776</td>
+        <td>
+        TPS - May 2022</td>
+        <td>
+        OML</td>
+        <td>
+        tensorflow</td>
+        <td><a href = "
+        https://www.kaggle.com/code/masatomurakawamm/tps-may22-1d-cnn-for-f-27-n-gram-tabtransformer/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33790</td>
+        <td>
+        TPS - Jul 2022</td>
+        <td>
+        OML</td>
+        <td>
+        eli5</td>
+        <td><a href = "
+        https://www.kaggle.com/code/imnaho/choose-colums-bayesiangaussianmixture/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33796</td>
+        <td>
+         Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        sklearn</td>
+        <td><a href = "
+        https://www.kaggle.com/code/yousiffaruk/eda-classifing-using-different-algorithms/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        32009</td>
+        <td>
+         Spaceship Titanic</td>
+        <td>
+        OML</td>
+        <td>
+        category_encoders</td>
+        <td><a href = "
+        https://www.kaggle.com/code/someshdev/logistic-regression-using-sklearn-and-cv/comments">Click for more details</a></td>
+        </tr>
+        
+        <tr>
+        <td>
+        33346</td>
+        <td>
+        TPS - Sep 2021</td>
+        <td>
+        OML</td>
+        <td>
+        catboost</td>
+        <td><a href = "
+        https://www.kaggle.com/code/martynovandrey/single-model-catboost-voting/comments">Click for more details</a></td>
+        </tr>
+        
+               
+<tr>
+  <td>11167</td>
+  <td><a href = "https://piecer-plc.github.io//posts/11167">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/11167">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/11167">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/11167">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>31751</td>
+  <td><a href = "https://piecer-plc.github.io//posts/31751">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31751">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31751">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31751">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>31753</td>
+  <td><a href = "https://piecer-plc.github.io//posts/31753">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31753">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31753">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31753">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>31770</td>
+  <td><a href = "https://piecer-plc.github.io//posts/31770">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31770">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31770">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31770">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>31856</td>
+  <td><a href = "https://piecer-plc.github.io//posts/31856">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31856">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31856">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31856">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>31902</td>
+  <td><a href = "https://piecer-plc.github.io//posts/31902">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31902">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31902">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31902">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>31915</td>
+  <td><a href = "https://piecer-plc.github.io//posts/31915">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31915">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31915">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31915">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>31950</td>
+  <td><a href = "https://piecer-plc.github.io//posts/31950">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31950">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31950">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/31950">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32053</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32053">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32053">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32053">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32053">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32292</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32292">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32292">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32292">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32292">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32347</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32347">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32347">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32347">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32347">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32427</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32427">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32427">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32427">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32427">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32490</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32490">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32490">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32490">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32490">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32522</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32522">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32522">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32522">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32522">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32532</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32532">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32532">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32532">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32532">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32564</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32564">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32564">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32564">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32564">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32569</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32569">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32569">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32569">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32569">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>32574</td>
+  <td><a href = "https://piecer-plc.github.io//posts/32574">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32574">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32574">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/32574">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33123</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33123">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33123">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33123">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33123">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33125</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33125">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33125">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33125">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33125">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33129</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33129">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33129">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33129">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33129">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33147</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33147">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33147">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33147">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33147">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33176</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33176">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33176">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33176">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33176">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33185</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33185">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33185">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33185">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33185">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33194</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33194">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33194">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33194">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33194">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33253</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33253">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33253">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33253">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33253">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33275</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33275">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33275">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33275">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33275">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33288</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33288">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33288">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33288">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33288">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33302</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33302">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33302">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33302">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33302">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33303</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33303">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33303">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33303">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33303">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33325</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33325">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33325">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33325">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33325">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33342</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33342">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33342">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33342">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33342">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33377</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33377">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33377">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33377">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33377">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33394</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33394">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33394">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33394">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33394">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33423</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33423">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33423">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33423">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33423">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33445</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33445">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33445">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33445">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33445">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33487</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33487">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33487">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33487">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33487">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33514</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33514">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33514">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33514">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33514">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33539</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33539">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33539">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33539">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33539">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33602</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33602">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33602">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33602">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33602">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33620</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33620">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33620">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33620">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33620">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33704</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33704">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33704">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33704">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33704">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33705</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33705">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33705">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33705">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33705">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33734</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33734">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33734">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33734">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33734">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33735</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33735">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33735">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33735">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33735">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33789</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33789">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33789">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33789">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33789">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33794</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33794">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33794">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33794">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33794">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33801</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33801">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33801">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33801">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33801">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33805</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33805">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33805">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33805">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33805">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33823</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33823">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33823">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33823">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33823">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33935</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33935">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33935">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33935">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33935">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33941</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33941">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33941">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33941">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33941">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33981</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33981">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33981">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33981">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33981">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>33994</td>
+  <td><a href = "https://piecer-plc.github.io//posts/33994">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33994">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33994">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/33994">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>34207</td>
+  <td><a href = "https://piecer-plc.github.io//posts/34207">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34207">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34207">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34207">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>34220</td>
+  <td><a href = "https://piecer-plc.github.io//posts/34220">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34220">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34220">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34220">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>34229</td>
+  <td><a href = "https://piecer-plc.github.io//posts/34229">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34229">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34229">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34229">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>34241</td>
+  <td><a href = "https://piecer-plc.github.io//posts/34241">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34241">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34241">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34241">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>34248</td>
+  <td><a href = "https://piecer-plc.github.io//posts/34248">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34248">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34248">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34248">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>34344</td>
+  <td><a href = "https://piecer-plc.github.io//posts/34344">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34344">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34344">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34344">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>34388</td>
+  <td><a href = "https://piecer-plc.github.io//posts/34388">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34388">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34388">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34388">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>34601</td>
+  <td><a href = "https://piecer-plc.github.io//posts/34601">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34601">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34601">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34601">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>34693</td>
+  <td><a href = "https://piecer-plc.github.io//posts/34693">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34693">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34693">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/34693">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>35699</td>
+  <td><a href = "https://piecer-plc.github.io//posts/35699">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/35699">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/35699">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/35699">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>35760</td>
+  <td><a href = "https://piecer-plc.github.io//posts/35760">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/35760">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/35760">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/35760">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>35776</td>
+  <td><a href = "https://piecer-plc.github.io//posts/35776">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/35776">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/35776">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/35776">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36128</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36128">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36128">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36128">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36128">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36151</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36151">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36151">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36151">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36151">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36157</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36157">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36157">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36157">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36157">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36188</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36188">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36188">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36188">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36188">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36198</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36198">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36198">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36198">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36198">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36239</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36239">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36239">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36239">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36239">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36265</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36265">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36265">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36265">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36265">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36335</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36335">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36335">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36335">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36335">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36488</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36488">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36488">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36488">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36488">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36501</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36501">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36501">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36501">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36501">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36523</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36523">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36523">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36523">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36523">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36567</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36567">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36567">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36567">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36567">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36572</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36572">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36572">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36572">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36572">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36577</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36577">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36577">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36577">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36577">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36582</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36582">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36582">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36582">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36582">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36586</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36586">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36586">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36586">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36586">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36594</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36594">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36594">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36594">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36594">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36618</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36618">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36618">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36618">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36618">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36630</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36630">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36630">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36630">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36630">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36635</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36635">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36635">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36635">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36635">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36637</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36637">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36637">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36637">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36637">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36639</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36639">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36639">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36639">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36639">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36641</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36641">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36641">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36641">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36641">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36647</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36647">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36647">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36647">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36647">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>36690</td>
+  <td><a href = "https://piecer-plc.github.io//posts/36690">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36690">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36690">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/36690">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>37107</td>
+  <td><a href = "https://piecer-plc.github.io//posts/37107">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37107">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37107">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37107">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>37117</td>
+  <td><a href = "https://piecer-plc.github.io//posts/37117">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37117">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37117">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37117">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>37258</td>
+  <td><a href = "https://piecer-plc.github.io//posts/37258">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37258">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37258">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37258">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>37259</td>
+  <td><a href = "https://piecer-plc.github.io//posts/37259">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37259">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37259">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37259">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>37298</td>
+  <td><a href = "https://piecer-plc.github.io//posts/37298">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37298">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37298">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37298">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>37445</td>
+  <td><a href = "https://piecer-plc.github.io//posts/37445">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37445">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37445">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37445">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>37731</td>
+  <td><a href = "https://piecer-plc.github.io//posts/37731">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37731">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37731">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37731">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>37758</td>
+  <td><a href = "https://piecer-plc.github.io//posts/37758">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37758">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37758">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37758">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>37776</td>
+  <td><a href = "https://piecer-plc.github.io//posts/37776">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37776">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37776">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/37776">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>38126</td>
+  <td><a href = "https://piecer-plc.github.io//posts/38126">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/38126">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/38126">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/38126">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>38150</td>
+  <td><a href = "https://piecer-plc.github.io//posts/38150">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/38150">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/38150">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/38150">click</a></td>
+  </tr>
+  
+  <tr>
+  <td>38162</td>
+  <td><a href = "https://piecer-plc.github.io//posts/38162">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/38162">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/38162">click</a></td>
+  <td><a href = "https://piecer-plc.github.io//posts/38162">click</a></td>
+  </tr>
+  
+    </tbody>
+<tfoot>
+   <tr>
+        <th>Pipeline ID</th>
+        <th>Competition</th>
+        <th>Type</th>
+        <th>Library</th>
+        <!-- <th>Forks</th> -->
+        <th>Reproduce Results</th>
+                              </tr>
+                            </tfoot>
+                        </table>
+</div>
+<script src="/assets/js/jquery-1.12.4.min.js"></script>
+    
+<script src="/assets/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/data-table-act.js"></script>
+<div id="d-help-win" class="d-help-win" style="display: none;">
+  <div id="win-title">Help
+      <span id="d-help-colse" clss="close_2" class="close_2">
+          × 
+      </span>
+  </div>
+  <div id="win-content">
+      <blockquote class="prompt-tip"><div><p> We provide a list of PLC issues captured by us in real-world pipelines and popular ML libraries.</p></div></blockquote>
+      <div>
+          <ol>
+              <li>Go to <strong><font color="#FF0000">Empirical Findings</font></strong> page</li>
+              <li>Select a bug and click on <strong><font color="#FF0000">reproduce result link</font></strong>.</li>
+              <li>You can find the reproduction results of each version and the related reproduction code.</li></ol>
+      </div>
+      <!-- 我们提供了xxx数据集。
+      1.
+      2.
+      3.
+      4.
+      查看详细复现结果：
+      动图！ -->
+      <img src="/assets/images/Pipeline-Bug.gif" alt="avatar">
+  </div>
+</div>
