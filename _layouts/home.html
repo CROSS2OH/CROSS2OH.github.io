@@ -3,36 +3,40 @@ layout: page
 # The Home page layout
 ---
 <div class="post-content">
-      A Machine Learning (ML) pipeline configure the workflow of a
-  learning task using the APIs provided by ML libraries. However,
-  a pipeline’s performance can vary significantly across different
-  configurations of ML library versions. Misconfigured pipelines can
-  result in inferior performance, such as poor execution time and memory
-  usage, numeric errors and even crashes. A pipeline is subject
-  to misconfiguration if it exhibits significantly inconsistent performance
-  upon changes in the versions of its configured libraries or
-  the combination of these libraries. We refer to such performance
-  inconsistency as an pipeline configuration (PLC) issue.
+      Abstract—OpenHarmony emerges as a potential third pillar
+in the mobile OS landscape alongside Android and iOS. To
+promote the adoption of OpenHarmony, developers have been
+porting C/C++ libraries from the native OS (Linux) to Open-
+Harmony. However, the porting can be exceptionally challenging
+because of the discrepancies between Linux and OpenHarmony
+in system libraries, runtime environments and build systems.
+These discrepancies lead to Cross-platform Compatibility (CPC)
+issues during cross compilation, which can be difficult to address
+for two reasons. First, existing cross-compilation toolchains only
+return simple error messages upon the occurrence of CPC
+issues, which are often not adaquate for the diagnosis of CPC
+issues. Second, fixing CPC issues requires the understanding
+and identification of discrepancies between the two OSs, yet
+documentation or systematic guidelines about the discrepancies
+are often not available.
   <br>
   <br>
-  There is no prior systematic study on the pervasiveness, impact
-  and root causes of PLC issues. A systematic understanding
-  of these issues helps configure effective ML pipelines and identify
-  misconfigured ones. In this paper, we present the first systematic
-  study of PLC issues. We propose <a href="https://piecer-plc.github.io/Piecer"><strong>Piecer</strong></a>, an infrastructure that automatically
-  generates a set of pipeline variants by varying different
-  version combinations of ML libraries and compares their performance
-  inconsistencies. We apply Piecer to the 3,380 pipelines that
-  can be deployed out of the 11,363 ML pipelines collected from multiple
-  ML competitions at Kaggle platform. The study results show
-  that 1,092 (32.3%) of the 3,380 pipelines manifest significant performance
-  inconsistencies on at least one variant. We find that 399,
-  243 and 440 pipelines can achieve better competition scores, execution
-  time and memory usage, respectively, by adopting a different
-  configuration. Based on our empirical findings, we constructed a
-  <a href="https://piecer-plc.github.io/Defective-Repository"><strong>repository</strong></a> containing 164 defective APIs and 106 API combinations
-  from 418 library versions, which helped us capture PLC issues in
-  <a href="https://piecer-plc.github.io/Empirical-Findings"><strong>309 real-world ML pipelines</strong></a>.
+  <!-- <a href="https://piecer-plc.github.io/Piecer"><strong>Piecer</strong></a> -->
+   <!-- <a href="https://piecer-plc.github.io/Defective-Repository"><strong>repository</strong></a> -->
+    <!--  <a href="https://piecer-plc.github.io/Empirical-Findings"><strong> -->
+  To assist developers in addressing these challenges, we con-
+ducted an empirical study on 92 C/C++ libraries successfully
+ported to OpenHarmony. Through manual step-by-step repro-
+duction of all CPC issues, our study reveals that discrepancies
+between OpenHarmony and Linux can be divided into three cat-
+egories, and CPC issues can manifest through eight dimensions.
+Furthermore, we identified eight common adaptation strategies
+for addressing CPC issues. Based on these findings, we developed
+a novel technique CROSS2OH, which seamlessly automates the
+porting of C/C++ libraries from Linux to OpenHarmony. Our
+evaluation shows that CROSS2OH achieves 0.81 and 0.89 in
+addressing CPC issues. Besides, with the aid of CROSS2OH, 26
+libraries have been officially ported to OpenHarmony.
 
 </div>
   <hr>
