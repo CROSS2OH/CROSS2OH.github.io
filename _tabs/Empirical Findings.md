@@ -3,10 +3,10 @@
 icon: fas fa-archive
 order: 3
 ---
-> Empirical findings of RQ3
+> Empirical findings of RQ2
 {: .prompt-info }
 
-[**Click for more details about empirical findings of RQ3.**](http://piecer-plc.github.io//posts/Empirical-Findings-RQ3/)
+[**Click for more details about empirical findings of RQ2.**](http://piecer-plc.github.io//posts/Empirical-Findings-RQ3/)
 
 
 
@@ -23,7 +23,8 @@ order: 3
 {: .prompt-info }
 [**Click for more details about real pipelines collected from GitHub and Hugging Face .**](http://piecer-plc.github.io//posts/Empirical-Findings-GH/)
 <div>
-<img src="/assets/images/ML-Bug_tu.gif" alt="avatar">
+<!-- TODO:动图 -->
+<!-- <img src="/assets/images/ML-Bug_tu.gif" alt="avatar"> -->
 </div>
  <div id="d-help-win" class="d-help-win" style="display: none;">
       <div id="win-title">Help
