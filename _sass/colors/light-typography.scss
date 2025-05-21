@@ -25,12 +25,12 @@
   --checkbox-color: #c5c5c5;
   --checkbox-checked-color: #07a8f7;
 
-  // 全局覆盖 可能导致sidebar-bg未定义
+  // sidebar-bg未定义——引入这个scss文件即可
   /* Sidebar */
-  --sidebar-bg: #e6eff8;
-  --sidebar-muted-color: #4f91cd;
-  --sidebar-active-color: #034581;
-  --nav-cursor-color: #757575;
+  --sidebar-bg: #f8f0e6;
+  --sidebar-muted-color: #c67d36;
+  --sidebar-active-color: #371c01;
+  --nav-cursor-color: #371c01;
   --sidebar-btn-bg: white;
 
   /* Topbar */
