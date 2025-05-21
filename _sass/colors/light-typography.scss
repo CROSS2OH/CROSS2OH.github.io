@@ -25,12 +25,15 @@
   --checkbox-color: #c5c5c5;
   --checkbox-checked-color: #07a8f7;
 
+  // 全局覆盖
   /* Sidebar */
-  --sidebar-bg: #e6eff8;
+  :root{
+    --sidebar-bg: #e6eff8;
   --sidebar-muted-color: #4f91cd;
   --sidebar-active-color: #034581;
   --nav-cursor-color: #757575;
   --sidebar-btn-bg: white;
+  }
 
   /* Topbar */
   --topbar-text-color: rgb(78, 78, 78);
