@@ -655,7 +655,7 @@ $sidebar-display: "sidebar-display";
   scrollbar-width: none;  /* Firefox */
 
   a {
-    @extend %sidebar-links;
+    // @extend %sidebar-links;
 
     &:hover {
       @include no-text-decoration;
