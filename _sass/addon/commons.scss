@@ -857,7 +857,7 @@ $sidebar-display: "sidebar-display";
       background-color: transparent;
 
       @extend %icon;
-      @extend %sidebar-links;
+      // @extend %sidebar-links;
 
       > i {
         @extend %clickable-transition;
