@@ -12,12 +12,12 @@ order: 3
 > Empirical findings of RQ1
 {: .prompt-info }
 <!-- RQ1:常见的cpc问题，根本原因 -->
-[**Click for more details about empirical findings of RQ1.**](https://github.com/CROSS2OH/CROSS2OH.github.io)
+[**Click for more details about empirical findings of RQ1.**](https://cross2oh.github.io///posts/Empirical-Findings-RQ1/)
 
 > Empirical findings of RQ2
 {: .prompt-info }
 <!-- RQ2:开发者的解决方案 -->
-[**Click for more details about empirical findings of RQ2.**](https://github.com/CROSS2OH/CROSS2OH.github.io)
+[**Click for more details about empirical findings of RQ2.**](https://cross2oh.github.io///posts/Empirical-Findings-RQ2)
 
 <div>
 <!-- TODO:动图 -->
@@ -44,6 +44,6 @@ order: 3
           4.
           查看详细复现结果：
           动图！ -->
-          <img src="/assets/images/Pipeline-Bug.gif" alt="avatar">
+          <!-- <img src="/assets/images/Pipeline-Bug.gif" alt="avatar"> -->
       </div>
   </div>

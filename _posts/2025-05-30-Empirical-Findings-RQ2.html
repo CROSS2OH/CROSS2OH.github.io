@@ -1,0 +1,200 @@
+---
+# layout: archives
+title: Empirical Findings ML Libraries
+autdor: Anonymous
+
+---
+<!--test  -->
+
+  This table presents empirical findings of RQ3. Among the
+  577 defective APIs, we find clear clues to the root causes of inducing
+  pipelines’ performance inconsistencies, crashes and NaN bugs
+  for 270 APIs (46.8%), in tde corresponding library release notes,
+  issues and code commits. We identified four types of essential root
+  causes and discuss them in two scenarios: performance impacts
+  induced by one library version and performance impacts induced by
+  a combination of library versions.
+
+  <div class="table-wrapper">
+    <table id="data-table-basic" class="table table-striped">
+
+      <tbody>
+        <tr>
+          <th rowspan="2" colspan="3" style="text-align: center;margin:auto" >Root Causes</th>
+          <th  colspan="2" style="text-align: center">Crash</th>
+          <th  colspan="2" style="text-align: center">Execution Time</th>
+          <th  colspan="2" style="text-align: center">Competition Score</th>
+          <th  colspan="2" style="text-align: center">Memory Usage</th>
+          <th  colspan="2" style="text-align: center">NaN</th>
+        </tr>
+          <tr>
+            <th style="text-align: center">#Variants</th>
+            <th style="text-align: center">#Pipelines</th>
+            <th style="text-align: center">#Variants</th>
+            <th style="text-align: center">#Pipelines</th>
+            <th style="text-align: center">#Variants</th>
+            <th style="text-align: center">#Pipelines</th>
+            <th style="text-align: center">#Variants</th>
+            <th style="text-align: center">#Pipelines</th>
+            <th style="text-align: center">#Variants</th>
+            <th style="text-align: center">#Pipelines</th>
+          </tr>
+          <tr>
+            <th rowspan="8" style="vertical-align: middle;">Performance Impacts induced by one library version</th>
+            <th rowspan="5" style="vertical-align: middle;">API Optimization</th>
+            <td style="text-align: center">Hardware support</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">92</td>
+            <td style="text-align: center">5</td>
+            <td style="text-align: center">7</td>
+            <td style="text-align: center">2</td>
+            <td style="text-align: center">12</td>
+            <td style="text-align: center">1</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">Data Processing</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">501</td>
+            <td style="text-align: center">11</td>
+            <td style="text-align: center">470</td>
+            <td style="text-align: center">14</td>
+            <td style="text-align: center">537</td>
+            <td style="text-align: center">13</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">Calculations</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">675</td>
+            <td style="text-align: center">18</td>
+            <td style="text-align: center">429</td>
+            <td style="text-align: center">11</td>
+            <td style="text-align: center">254</td>
+            <td style="text-align: center">15</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">Otders</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">41</td>
+            <td style="text-align: center">2</td>
+            <td style="text-align: center">8</td>
+            <td style="text-align: center">1</td>
+            <td style="text-align: center">15</td>
+            <td style="text-align: center">3</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+          </tr>
+          <tr>
+            <td style="text-align: center">Sum</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">1,309</td>
+            <td style="text-align: center">36</td>
+            <td style="text-align: center">916</td>
+            <td style="text-align: center">28</td>
+            <td style="text-align: center">818</td>
+            <td style="text-align: center">32</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">Default Hypermeter Change</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">30</td>
+            <td style="text-align: center">5</td>
+            <td style="text-align: center">25</td>
+            <td style="text-align: center">2</td>
+            <td style="text-align: center">17</td>
+            <td style="text-align: center">7</td>
+            <td style="text-align: center">9</td>
+            <td style="text-align: center">2</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">Technical Debt</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">47</td>
+            <td style="text-align: center">2</td>
+            <td style="text-align: center">9</td>
+            <td style="text-align: center">1</td>
+            <td style="text-align: center">92</td>
+            <td style="text-align: center">2</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+          </tr>
+          <tr>
+            <td  colspan="2" style="text-align: center">API Breaking Change</td>
+            <td style="text-align: center">619</td>
+            <td style="text-align: center">35</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">236</td>
+            <td style="text-align: center">12</td>
+          </tr>
+          <tr>
+            <th rowspan="2" style="vertical-align: middle;">Performance Impacts induced by a combination of library versions</th>
+            <td colspan="2" style="vertical-align: middle;">Indirect Dependency Interference</td>
+            <td style="text-align: center">31</td>
+            <td style="text-align: center">7</td>
+            <td style="text-align: center">991</td>
+            <td style="text-align: center">15</td>
+            <td style="text-align: center">22</td>
+            <td style="text-align: center">5</td>
+            <td style="text-align: center">421</td>
+            <td style="text-align: center">11</td>
+            <td style="text-align: center">6</td>
+            <td style="text-align: center">3</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">Data Flow Interference</td>
+            <td style="text-align: center">17</td>
+            <td style="text-align: center">3</td>
+            <td style="text-align: center">1,114</td>
+            <td style="text-align: center">24</td>
+            <td style="text-align: center">661</td>
+            <td style="text-align: center">19</td>
+            <td style="text-align: center">501</td>
+            <td style="text-align: center">16</td>
+            <td style="text-align: center">4</td>
+            <td style="text-align: center">3</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+      
+  <script src="/assets/js/jquery-1.12.4.min.js"></script>
+    
+  <script src="/assets/js/jquery.dataTables.min.js"></script>
+  <script src="/assets/js/data-table-act.js"></script>
+  <div id="d-help-win" class="d-help-win" style="display: none;">
+    <div id="win-title">Help
+        <span id="d-help-colse" clss="close_2" class="close_2">
+            × 
+        </span>
+    </div>
+    <div id="win-content">
+        <blockquote class="prompt-tip"><div><p> We provide a list of PLC issues captured by us in real-world pipelines and popular ML libraries.</p></div></blockquote>
+        <div>
+            <ol>
+                <li>Go to <strong><font color="#FF0000">Empirical Findings</font></strong> page</li>
+                <li>Select a bug and click on <strong><font color="#FF0000">reproduce result link</font></strong>.</li>
+                <li>You can find the reproduction results of each version and the related reproduction code.</li></ol>
+        </div>
+        <!-- <img src="/assets/images/Pipeline-Bug.gif" alt="avatar"> -->
+    </div>
+  </div>
+  
