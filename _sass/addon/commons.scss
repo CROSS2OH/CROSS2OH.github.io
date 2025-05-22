@@ -707,11 +707,11 @@ $sidebar-display: "sidebar-display";
       // color: #371c01;
 
       html[data-mode='light'] & {
-        color: #371c01;
+        color: #371c01 !important;
       }
 
       html[data-mode='dark'] & {
-        color: #ededed;
+        color: #ededed !important;
       }
     }
   }
