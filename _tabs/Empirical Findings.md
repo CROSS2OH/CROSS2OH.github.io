@@ -3,25 +3,22 @@
 icon: fas fa-archive
 order: 3
 ---
+
+> CPC Issues Identified in 92 Real Subjects
+{: .prompt-info }
+<!-- 92项目中的cpc问题 -->
+[**Click for more details on CPC issues identified in 92 real cases.**](https://github.com/CROSS2OH/CROSS2OH.github.io)
+
+> Empirical findings of RQ1
+{: .prompt-info }
+<!-- RQ1:常见的cpc问题，根本原因 -->
+[**Click for more details about empirical findings of RQ1.**](https://github.com/CROSS2OH/CROSS2OH.github.io)
+
 > Empirical findings of RQ2
 {: .prompt-info }
+<!-- RQ2:开发者的解决方案 -->
+[**Click for more details about empirical findings of RQ2.**](https://github.com/CROSS2OH/CROSS2OH.github.io)
 
-[**Click for more details about empirical findings of RQ2.**](http://piecer-plc.github.io//posts/Empirical-Findings-RQ3/)
-
-
-
-> 18 PLC Issues Repored to ML libraries.
-{: .prompt-info }
-
-<!-- ![gif](/assets/images/ML-Libs.gif) -->
-[**Click for more details about PLC issues reported to ML libraries.**](http://piecer-plc.github.io/posts/Empirical-Findings-ML-Libraries/)
-> PLC Issues Identified in 309 Real Pipelines
-{: .prompt-info }
-[**Click for more details about PLC issues reported to ML pipelines.**](http://piecer-plc.github.io/posts/Empirical-Findings-ML-Pipelines/)
-
-> GitHub and Hugging Face pipelines.
-{: .prompt-info }
-[**Click for more details about real pipelines collected from GitHub and Hugging Face .**](http://piecer-plc.github.io//posts/Empirical-Findings-GH/)
 <div>
 <!-- TODO:动图 -->
 <!-- <img src="/assets/images/ML-Bug_tu.gif" alt="avatar"> -->
