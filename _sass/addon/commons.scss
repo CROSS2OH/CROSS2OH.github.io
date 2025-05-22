@@ -655,7 +655,7 @@ $sidebar-display: "sidebar-display";
   scrollbar-width: none;  /* Firefox */
 
   a {
-    // @extend %sidebar-links;
+    @extend %sidebar-links;
 
     &:hover {
       @include no-text-decoration;
@@ -695,47 +695,47 @@ $sidebar-display: "sidebar-display";
     }
   } /* #avatar */
 
-  // .site-title {
-  //   margin-top: 0.55rem;
-
-  //   a {
-  //     @extend %clickable-transition;
-
-  //     font-weight: 900;
-  //     font-size: 1.5rem;
-  //     letter-spacing: 0.5px;
-  //     // color: #371c01;
-
-  //     html[data-mode='light'] & {
-  //       color: #371c01 !important;
-  //     }
-
-  //     html[data-mode='dark'] & {
-  //       color: #ededed !important;
-  //     }
-  //   }
-  // }
-
   .site-title {
     margin-top: 0.55rem;
+
     a {
       @extend %clickable-transition;
 
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
-      // 不写 color，这里交给下面的模式控制
+      color: #371c01;
+
+      // html[data-mode='light'] & {
+      //   color: #371c01 !important;
+      // }
+
+      // html[data-mode='dark'] & {
+      //   color: #ededed !important;
+      // }
     }
-}
-
-  // 颜色根据模式设置（必须放在 a 外面）
-  html[data-mode='light'] .site-title a {
-    color: #371c01 !important;
   }
 
-  html[data-mode='dark'] .site-title a {
-    color: #ededed !important;
-  }
+//   .site-title {
+//     margin-top: 0.55rem;
+//     a {
+//       @extend %clickable-transition;
+
+//       font-weight: 900;
+//       font-size: 1.5rem;
+//       letter-spacing: 0.5px;
+//       // 不写 color，这里交给下面的模式控制
+//     }
+// }
+
+//   // 颜色根据模式设置（必须放在 a 外面）
+//   html[data-mode='light'] .site-title a {
+//     color: #371c01 !important;
+//   }
+
+//   html[data-mode='dark'] .site-title a {
+//     color: #ededed !important;
+//   }
 
   .site-subtitle {
     font-size: 95%;
@@ -857,7 +857,7 @@ $sidebar-display: "sidebar-display";
       background-color: transparent;
 
       @extend %icon;
-      // @extend %sidebar-links;
+      @extend %sidebar-links;
 
       > i {
         @extend %clickable-transition;
