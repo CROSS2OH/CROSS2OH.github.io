@@ -12,12 +12,12 @@ order: 3
 > Empirical findings of RQ1
 {: .prompt-info }
 <!-- RQ1:常见的cpc问题，根本原因 -->
-[**Click for more details about empirical findings of RQ1.**](https://cross2oh.github.io/posts/Empirical-Findings-RQ1/)
+[**Click for more details about empirical findings of RQ1.**](https://cross2oh.github.io/posts/empirical-findings-rq1/)
 
 > Empirical findings of RQ2
 {: .prompt-info }
 <!-- RQ2:开发者的解决方案 -->
-[**Click for more details about empirical findings of RQ2.**](https://cross2oh.github.io/posts/Empirical-Findings-RQ2)
+[**Click for more details about empirical findings of RQ2.**](https://cross2oh.github.io/posts/empirical-findings-rq2/)
 
 <div>
 <!-- TODO:动图 -->
