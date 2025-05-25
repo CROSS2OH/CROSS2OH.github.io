@@ -9,24 +9,58 @@ layout: page
 这些差异在交叉编译期间表现为跨平台兼容性（Cross-platform Compatibility， CPC）问题，由于两个关键原因，这些问题特别难以解决。
 首先，传统的交叉编译工具链只提供了神秘的错误消息，无法为CPC问题提供足够的诊断信息。
 其次，解决这些问题需要对跨平台差异有深刻的理解，然而关于linux到openharmony差异的全面文档或系统指南在很大程度上仍然是不可用的。 -->
-      OpenHarmony has emerged as a viable third ecosys-
-tem in mobile operating systems, complementing Android and
-iOS. To support its adoption, significant efforts have been
-devoted to porting C/C++ libraries from Linux to OpenHarmony.
-However, this porting process presents unique challenges due to
-fundamental architectural differences in system libraries, run-
-time environments, and build systems between the two platforms.
-These discrepancies manifest as Cross-platform Compatibility
-(CPC) issues during cross-compilation, which are particularly
+      OpenHarmony is a new mobile operating system
+that offers a popular alternative to Android and iOS. To support
+its adoption, significant efforts have been devoted to porting
+C/C++ libraries from Linux to OpenHarmony. However, this
+porting process presents unique challenges due to the funda-
+mental architectural differences in system libraries, runtime
+environments, and build systems between the two platforms.
+These discrepancies manifest as Cross-platform Incompatibility
+(CPI) issues during cross-compilation, which are particularly
 difficult to resolve for two key reasons. First, conventional
-cross-compilation toolchains provide only cryptic error messages
-that offer inadequate diagnostic information for CPC issues.
-Second, resolving these issues requires deep understanding of
+cross-compilation toolchains provide only brief error messages
+that offer inadequate diagnostic information for CPI issues.
+Second, resolving these issues requires a deep understanding of
 cross-platform discrepancies, yet comprehensive documentation
 or systematic guidelines about such Linux-to-OpenHarmony
 differences remain largely unavailable.
-  <br>
-  <br>
+<!-- 两个换行 -->
+<br>
+<br>
+<!-- 为了帮助开发人员应对这些挑战，我们对
+对92个C/ c++库进行了实验研究移植到OpenHarmony。通过手工一步步重现
+归纳所有CPI问题，我们的研究揭示了这些差异OpenHarmony与Linux之间可分为三种
+类别和CPI问题可以通过八个维度来体现。此外，我们确定了8种常见的适应策略
+解决居民消费价格问题。基于这些发现，本文提出
+CROSS2OH是一种基于linux的自动化移植技术
+软件到OpenHarmony。该方法结合了：(1)适应知识库（来源于RQ1和RQ2发现）
+(2)采用静态分析方法检测并修补八类CPI问题的类型。与OpenHarmony紧密集成
+编译框架，CROSS2OH自动化整个交叉编译过程。使用真实的开发者补丁进行评估
+在解决CPI问题上显示了0.94的召回率和0.91的准确率。
+值得注意的是，我们成功地移植了40个关键库(包括
+依赖于微信、Microsoft Excel和Bilibili等)
+通过官方的OpenHarmony审核。 -->
+To assist developers in addressing these challenges, we con-
+ducted an empirical study on 92 C/C++ libraries successfully
+ported to OpenHarmony. Through manual step-by-step repro-
+duction of all CPI issues, our study reveals that discrepancies
+between OpenHarmony and Linux can be divided into three
+categories, and CPI issues can manifest through eight dimensions.
+Furthermore, we identified eight common adaptation strategies
+for resolving CPI issues. Based on these findings, we present
+<a href="https://cross2oh.github.io/CROSS2OH/"><strong>CROSS2OH</strong></a>, an automated technique for porting Linux-based
+software to OpenHarmony. Our approach combines: (1) an
+adaptation knowledge base (derived from RQ1 and RQ2 findings)
+and (2) a static analysis approach to detect and patch eight
+types of CPI issues. Tightly integrated with the OpenHarmony’s
+compilation framework, CROSS2OH automates the entire cross-
+compilation process. Evaluation using real developer patches
+shows 0.94 recall and 0.91 precision in resolving CPI issues.
+<br>
+<span style="color: #2697fa; font-weight: bold;">Notably, we successfully ported 40 critical libraries (including
+dependencies for WeChat, Microsoft Excel, and Bilibili, etc.), all
+passing official OpenHarmony review.</span>
   <!-- 为了帮助开发人员应对这些挑战，我们对92个成功移植到OpenHarmony的C/ c++库进行了实证研究。
 通过手工分步再现所有CPC问题，我们的研究发现OpenHarmony与Linux之间的差异可以分为三类，CPC问题可以通过八个维度表现出来。
 此外，我们确定了解决CPC问题的八种常见适应策略。
@@ -40,26 +74,6 @@ differences remain largely unavailable.
    <!-- <a href="https://piecer-plc.github.io/Defective-Repository"><strong>repository</strong></a> -->
     <!--  <a href="https://piecer-plc.github.io/Empirical-Findings"><strong> -->
         <!-- https://cross2oh.github.io/CROSS2OH/ -->
-  To assist developers in addressing these challenges, we con-
-ducted an empirical study on 92 C/C++ libraries successfully
-ported to OpenHarmony. Through manual step-by-step repro-
-duction of all CPC issues, our study reveals that discrepancies
-between OpenHarmony and Linux can be divided into three cat-
-egories, and CPC issues can manifest through eight dimensions.
-Furthermore, we identified eight common adaptation strategies
-for addressing CPC issues. Based on these findings, we present
-<a href="https://cross2oh.github.io/CROSS2OH/"><strong>CROSS2OH</strong></a>, 
-an automated technique for porting Linux-based
-software to OpenHarmony. Our approach combines: 
-<br>(1) an adap-tation knowledge base (derived from RQ1 and RQ2 findings)  </br>
-and
-(2) static analysis to detect and patch eight types of CPC issues.
-<br>Tightly integrated with the LYCIUM framework, CROSS2OH
-automates the entire cross-compilation process. Evaluation using
-real developer patches shows 0.94 recall and 0.91 precision in
-resolving CPC issues. Notably, we successfully ported 36 critical
-libraries (including dependencies for WeChat, Microsoft Excel,
-and Bilibili, etc.), all passing official OpenHarmony review.</br>
 </div>
   <hr>
   <div class="post-content">
