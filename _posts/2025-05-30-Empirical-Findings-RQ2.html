@@ -19,157 +19,116 @@ author: Anonymous
 
       <tbody>
         <tr>
-          <th rowspan="2" colspan="3" style="text-align: center;margin:auto" >Root Causes</th>
-          <th  colspan="2" style="text-align: center">Crash</th>
-          <th  colspan="2" style="text-align: center">Execution Time</th>
-          <th  colspan="2" style="text-align: center">Competition Score</th>
-          <th  colspan="2" style="text-align: center">Memory Usage</th>
-          <th  colspan="2" style="text-align: center">NaN</th>
+          <th rowspan="1" colspan="1" style="text-align: center;margin:auto" >Issue Type</th>
+          <th  colspan="1" style="text-align: center;width: 500px;">Description</th>
+          <th  colspan="1" style="text-align: center">Root Causes</th>
+          <th  colspan="1" style="text-align: center">#issues</th>
+          <th  colspan="1" style="text-align: center">#Ratio</th>
+          <th  colspan="1" style="text-align: center">Example Link</th>
         </tr>
+        <!-- 第一行 -->
           <tr>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
+            <th rowspan="3" style="vertical-align: middle;">Type A</th>
+            <th rowspan="3" style="text-align: center;width: 500px;">CPI issues caused by system library and runtime
+environment discrepancies between OpenHarmony and Linux</td>
+            <!-- type A 1 -->
+            <td style="text-align: center">Inconsistent Native API Availability</td>
+            <td style="text-align: center">51</td>
+            <td style="text-align: center">25.4%</td>
+            <!-- 添加一个例子链接 -->
+            <td style="text-align: center">
+              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/openldap/openldap_oh_pkg.patch?init=initTree" target="_blank">OpenLDAP</a>
+            </td>
           </tr>
           <tr>
-            <th rowspan="8" style="vertical-align: middle;">Performance Impacts induced by one library version</th>
-            <th rowspan="5" style="vertical-align: middle;">API Optimization</th>
-            <td style="text-align: center">Hardware support</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">92</td>
-            <td style="text-align: center">5</td>
-            <td style="text-align: center">7</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">12</td>
-            <td style="text-align: center">1</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td style="text-align: center">Data Processing</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">501</td>
-            <td style="text-align: center">11</td>
-            <td style="text-align: center">470</td>
-            <td style="text-align: center">14</td>
-            <td style="text-align: center">537</td>
-            <td style="text-align: center">13</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td style="text-align: center">Calculations</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">675</td>
-            <td style="text-align: center">18</td>
-            <td style="text-align: center">429</td>
-            <td style="text-align: center">11</td>
-            <td style="text-align: center">254</td>
-            <td style="text-align: center">15</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td style="text-align: center">Otders</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">41</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">8</td>
-            <td style="text-align: center">1</td>
-            <td style="text-align: center">15</td>
-            <td style="text-align: center">3</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td style="text-align: center">Sum</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">1,309</td>
-            <td style="text-align: center">36</td>
-            <td style="text-align: center">916</td>
-            <td style="text-align: center">28</td>
-            <td style="text-align: center">818</td>
-            <td style="text-align: center">32</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center">Default Hypermeter Change</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">30</td>
-            <td style="text-align: center">5</td>
-            <td style="text-align: center">25</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">17</td>
-            <td style="text-align: center">7</td>
-            <td style="text-align: center">9</td>
-            <td style="text-align: center">2</td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center">Technical Debt</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">47</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">9</td>
-            <td style="text-align: center">1</td>
-            <td style="text-align: center">92</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td  colspan="2" style="text-align: center">API Breaking Change</td>
-            <td style="text-align: center">619</td>
-            <td style="text-align: center">35</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">236</td>
-            <td style="text-align: center">12</td>
-          </tr>
-          <tr>
-            <th rowspan="2" style="vertical-align: middle;">Performance Impacts induced by a combination of library versions</th>
-            <td colspan="2" style="vertical-align: middle;">Indirect Dependency Interference</td>
-            <td style="text-align: center">31</td>
-            <td style="text-align: center">7</td>
-            <td style="text-align: center">991</td>
-            <td style="text-align: center">15</td>
-            <td style="text-align: center">22</td>
-            <td style="text-align: center">5</td>
-            <td style="text-align: center">421</td>
-            <td style="text-align: center">11</td>
-            <td style="text-align: center">6</td>
-            <td style="text-align: center">3</td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center">Data Flow Interference</td>
-            <td style="text-align: center">17</td>
-            <td style="text-align: center">3</td>
-            <td style="text-align: center">1,114</td>
-            <td style="text-align: center">24</td>
-            <td style="text-align: center">661</td>
+            <!-- type A 2 -->
+            <td style="text-align: center">Divergent Logical Path Encapsulation Conventions</td>
             <td style="text-align: center">19</td>
-            <td style="text-align: center">501</td>
-            <td style="text-align: center">16</td>
+            <td style="text-align: center">9.4%</td>
+            <!-- 例子链接 -->
+            <td style="text-align: center">
+              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/Chipmunk2D/Chipmunk2D_oh_pkg.patch?init=initTree" target="_blank">Chipmunk2D</a>
+            </td>
+          </tr>
+          <tr>
+            <!-- typeA 3 -->
+            <td style="text-align: center">Non-aligned Filesystem Hierarchy Structures</td>
+            <td style="text-align: center">38</td>
+            <td style="text-align: center">18.9%</td>
+            <!-- 例子链接 -->
+            <td style="text-align: center">
+              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/community/pulseaudio/pulseaudio_oh_pkg.patch?init=initTree" target="_blank">pulseaudio</a>
+            </td>
+          </tr>
+          <!-- 第二行 -->
+          <tr>
+            <th rowspan="4" style="vertical-align: middle;">Type B</th>
+            <th rowspan="4" style="vertical-align: middle;width: 500px;">OpenHarmony and Linux have discrepant build system</td>
+            <!-- type B 1 -->
+            <td style="text-align: center">Compiler-dependent Default Type Signedness Variations</td>
+            <td style="text-align: center">13</td>
+            <td style="text-align: center">6.5%</td>
+            <!-- 添加一个例子链接 -->
+            <td style="text-align: center">
+              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/json-schema-validator/json-schema-validator_oh_pkg.patch?init=initTree" target="_blank">json-schema-validator</a>
+            </td>
+          </tr>
+          <tr>
+            <!-- type B 2 -->
+            <td style="text-align: center">ISA-specific Compilation Configuration Mismatches</td>
+            <td style="text-align: center">10</td>
+            <td style="text-align: center">5%</td>
+            <!-- 例子链接 -->
+            <td style="text-align: center">
+              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/cpp-httplib/cpp-httplib_oh_pkg.patch?init=initTree" target="_blank">cpp-httplib</a>
+            </td>
+          </tr>
+          <tr>
+            <!-- type B 3 -->
+            <td style="text-align: center">Conditional Compilation Branch Inconsistencies</td>
+            <td style="text-align: center">60</td>
+            <td style="text-align: center">29.8%</td>
+            <!-- 例子链接 -->
+            <td style="text-align: center">
+              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/chrono/chrono_oh_pkg.patch?init=initTree" target="_blank">chrono</a>
+            </td>
+          </tr>
+          <tr>
+            <!-- type B 4 -->
+            <td style="text-align: center">Differing C/C++ Standard Version Support Thresholds</td>
             <td style="text-align: center">4</td>
-            <td style="text-align: center">3</td>
+            <td style="text-align: center">2%</td>
+            <!-- 例子链接 -->
+            <td style="text-align: center">
+              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/protobuf_v3.6.1/protobuf-v3.6.1_oh_pkg.patch?init=initTree" target="_blank">protobuf</a>
+            </td>
+          </tr>
+          <!-- 第三行 -->
+          <tr>
+            <th rowspan="1" style="vertical-align: middle;">Type C</th>
+            <th colspan="1" style="vertical-align: middle;width: 500px;">API breaking changes of third-party libraries
+pre-installed in OpenHarmony and Linux</td>
+            <!-- type C 1 -->
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">4</td>
+            <td style="text-align: center">2%</td>
+            <!-- 添加一个例子链接 -->
+            <td style="text-align: center">
+              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/zbar/zbar_oh_pkg.patch?init=initTree" target="_blank">zbar</a>
+            </td>
+          </tr>
+          <!-- others -->
+          <tr>
+            <th rowspan="1" style="vertical-align: middle;">Others</th>
+            <th colspan="1" style="vertical-align: middle;">-</td>
+            <td style="text-align: center"> Discrepant warning messages thrown by
+the compiler toolchains</td>
+            <td style="text-align: center">2</td>
+            <td style="text-align: center">1%</td>
+            <!-- 添加一个例子链接 -->
+            <td style="text-align: center">
+              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/tinyexr/tinyexr_oh_pkg.patch?init=initTree" target="_blank">tinyexr</a>
+            </td>
           </tr>
       </tbody>
     </table>
@@ -193,6 +152,7 @@ author: Anonymous
                 <li>Select a bug and click on <strong><font color="#FF0000">reproduce result link</font></strong>.</li>
                 <li>You can find the reproduction results of each version and the related reproduction code.</li></ol>
         </div>
+        <!-- 动图 -->
         <!-- <img src="/assets/images/Pipeline-Bug.gif" alt="avatar"> -->
     </div>
   </div>
