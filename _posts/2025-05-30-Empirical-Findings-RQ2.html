@@ -29,15 +29,12 @@ author: Anonymous
           <tr>
             <th rowspan="3" style="vertical-align: middle;">Type A</th>
             <th rowspan="3" style="text-align: center;width: 500px;">CPI issues caused by system library and 
-              <br>runtime environment discrepancies 
-              <br>between OpenHarmony and Linux</td>
+              <br>runtime environment discrepancies between OpenHarmony and Linux</td>
             <!-- type A 1 -->
             <td style="text-align: center">Inconsistent Native API Availability</td>
-            <td style="text-align: center"> (1) supplementing equivalent alternative APIs from
-musl/OpenHarmony kernel
-<br>
- (2) implementing the APIs
-within *.patch files</td>
+            <td style="text-align: center"> Address incompatible APIs by
+              <br>(1) supplementing equivalent alternative APIs from musl/OpenHarmony kernel
+<br>(2) implementing the APIs within *.patch files</td>
             <!-- 添加一个例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/openldap/openldap_oh_pkg.patch?init=initTree" target="_blank">OpenLDAP</a>
@@ -46,8 +43,7 @@ within *.patch files</td>
           <tr>
             <!-- type A 2 -->
             <td style="text-align: center">Divergent Logical Path Encapsulation Conventions</td>
-            <td style="text-align: center">eplace
-logical paths which reference header files with physical paths</td>
+            <td style="text-align: center">Replace logical header file paths with their corresponding physical file paths</td>
             <!-- 例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/Chipmunk2D/Chipmunk2D_oh_pkg.patch?init=initTree" target="_blank">Chipmunk2D</a>
@@ -56,8 +52,8 @@ logical paths which reference header files with physical paths</td>
           <tr>
             <!-- typeA 3 -->
             <td style="text-align: center">Non-aligned Filesystem Hierarchy Structures</td>
-            <td style="text-align: center">Employe path remapping by convert-
-ing the standard FHS hierarchy to OpenHarmony-compatible
+            <td style="text-align: center">Employe path remapping by converting the standard FHS hierarchy
+              <br> to OpenHarmony-compatible
 filesystem hierarchy</td>
             <!-- 例子链接 -->
             <td style="text-align: center">
@@ -70,8 +66,7 @@ filesystem hierarchy</td>
             <th rowspan="4" style="vertical-align: middle;width: 500px;">OpenHarmony and Linux have discrepant build system</td>
             <!-- type B 1 -->
             <td style="text-align: center">Compiler-dependent Default Type Signedness Variations</td>
-            <td style="text-align: center">Enforce the signedness
-of Char type</td>
+            <td style="text-align: center">Enforce the signedness of Char type</td>
             <!-- 添加一个例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/json-schema-validator/json-schema-validator_oh_pkg.patch?init=initTree" target="_blank">json-schema-validator</a>
@@ -80,8 +75,8 @@ of Char type</td>
           <tr>
             <!-- type B 2 -->
             <td style="text-align: center">ISA-specific Compilation Configuration Mismatches</td>
-            <td style="text-align: center">Incorporate ARM-specific compilation options in build configura-
-tions to ensure proper architectural support</td>
+            <td style="text-align: center">Incorporate ARM-specific compilation options in build configurations
+            <br> to ensure proper architectural support</td>
             <!-- 例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/cpp-httplib/cpp-httplib_oh_pkg.patch?init=initTree" target="_blank">cpp-httplib</a>
@@ -90,7 +85,7 @@ tions to ensure proper architectural support</td>
           <tr>
             <!-- type B 3 -->
             <td style="text-align: center">Conditional Compilation Branch Inconsistencies</td>
-            <td style="text-align: center">Extende the original OS-detection logic: 
+            <td style="text-align: center">Extend the original OS-detection logic: 
 <br>(1)OpenHarmony-specific macro checks
 <br>(2)Build system identification </td>
             <!-- 例子链接 -->
@@ -101,7 +96,7 @@ tions to ensure proper architectural support</td>
           <tr>
             <!-- type B 4 -->
             <td style="text-align: center">Differing C/C++ Standard Version Support Thresholds</td>
-            <td style="text-align: center">Specify the OpenHarmony-supported version</td>
+            <td style="text-align: center">Specify the version supported by OpenHarmony</td>
             <!-- 例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/protobuf_v3.6.1/protobuf-v3.6.1_oh_pkg.patch?init=initTree" target="_blank">protobuf</a>
@@ -114,11 +109,9 @@ tions to ensure proper architectural support</td>
 pre-installed in OpenHarmony and Linux</td>
             <!-- type C 1 -->
             <td style="text-align: center">-</td>
-            <td style="text-align: center">Ensure compatibility:
-              <br>
-(1)replacing incompatible APIs with their OpenHarmony equivalents
-<br>
-(2)implementing missing API implementation in *.patch files</td>
+            <td style="text-align: center">Ensure compatibility by:
+              <br>(1)Replacing incompatible APIs with their OpenHarmony equivalents
+              <br>(2)Implementing missing API implementation in *.patch files</td>
             <!-- 添加一个例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/zbar/zbar_oh_pkg.patch?init=initTree" target="_blank">zbar</a>
