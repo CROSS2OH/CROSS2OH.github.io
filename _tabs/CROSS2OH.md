@@ -31,6 +31,7 @@ sudo apt install cmake
 ```
 <span style="color: #2697fa; font-weight: bold;">Note:</span> The installation path of CTags must be explicitly recorded, as CROSS2OH requires this path to be configured for proper functionality during tool execution.
 - Step 3
+
 <!-- 配置path信息 -->
 Define the values of the following variables in PathUtil.java
 
@@ -54,28 +55,24 @@ Define the values of the following variables in PathUtil.java
 ```
 - Step 4
 
-Download the source code and install the requirements.
+Package the configured CROSS2OH into a JAR file.
 ```java
-java -jar xx
+mvn clean package
 ```
 - Step 5
 
-Download the source code and install the requirements.
+Provide one or more download links to GitHub-hosted C/C++ libraries with specified version tags.
 ```java
-java -jar xx
+//example
+//https://github.com/zsummer/log4z/archive/refs/tags/v3.4.0.zip
 ```
 - Step 6
 
-Download the source code and install the requirements.
-```java
-mvn clean 
-```
-- Step 7
-
 Run.
 ```java
-java -jar xx
+java -jar ohos_adaptation-1.0-SNAPSHOT-jar-with-dependencies.jar https://github.com/zsummer/log4z/archive/refs/tags/v3.4.0.zip
 ```
+Finally, CROSS2OH downloads the provided compressed package, completes the detection of CPI issues, applies fixes to the identified problems, and generates corresponding *.patch files, which are stored in the configured THIRDPARTY_PATH.
 <div id="d-help-win" class="d-help-win" >
     <div id="win-title">Help
         <span id="d-help-colse" clss="close_2" class="close_2">
