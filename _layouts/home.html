@@ -9,7 +9,7 @@ layout: page
 这些差异在交叉编译期间表现为跨平台兼容性（Cross-platform Compatibility， CPC）问题，由于两个关键原因，这些问题特别难以解决。
 首先，传统的交叉编译工具链只提供了神秘的错误消息，无法为CPC问题提供足够的诊断信息。
 其次，解决这些问题需要对跨平台差异有深刻的理解，然而关于linux到openharmony差异的全面文档或系统指南在很大程度上仍然是不可用的。 -->
-      OpenHarmony is a new mobile operating system
+    OpenHarmony is a new mobile operating system
 that offers a popular alternative to Android and iOS. To support
 its adoption, significant efforts have been devoted to porting
 C/C++ libraries from Linux to OpenHarmony. However, this
@@ -45,22 +45,29 @@ To assist developers in addressing these challenges, we con-
 ducted an empirical study on 92 C/C++ libraries successfully
 ported to OpenHarmony. Through manual step-by-step repro-
 duction of all CPI issues, our study reveals that discrepancies
-between OpenHarmony and Linux can be divided into three
+between Linux and OpenHarmony can be divided into three
 categories, and CPI issues can manifest through eight dimensions.
 Furthermore, we identified eight common adaptation strategies
 for resolving CPI issues. Based on these findings, we present
-<a href="https://cross2oh.github.io/CROSS2OH/"><strong>CROSS2OH</strong></a>, an automated technique for porting Linux-based
+<a href="https://cross2oh.github.io/CROSS2OH/"><strong>CROSS2OH</strong></a>,
+an automated technique for porting Linux-based
 software to OpenHarmony. Our approach combines: (1) an
 adaptation knowledge base (derived from RQ1 and RQ2 findings)
 and (2) a static analysis approach to detect and patch eight
-types of CPI issues. Tightly integrated with the OpenHarmony’s
-compilation framework, CROSS2OH automates the entire cross-
-compilation process. Evaluation using real developer patches
-shows 0.94 recall and 0.91 precision in resolving CPI issues.
+types of CPI issues. Evaluation using real developer patches
+shows CROSS2OH achieves 0.94 recall and 0.91 precision in
+resolving CPI issues. 
 <br>
-<span style="color: #2697fa; font-weight: bold;">Notably, we successfully ported 40 critical libraries (including
-dependencies for WeChat, Microsoft Excel, and Bilibili, etc.), all
-passing official OpenHarmony review.</span>
+<span style="color: #2697fa; font-weight: bold;"></span>Notably, CROSS2OH enables successful
+cross-compilation for 40 critical libraries (including dependencies
+for popular Android apps such as WeChat, Microsoft Excel,
+Bilibili), with 29 of them passed official OpenHarmony review.</span>
+<br>
+The evaluation results demonstrate CROSS2OH’s potential to
+streamline the porting process and foster the growth of the
+OpenHarmony software ecosystem.
+
+
   <!-- 为了帮助开发人员应对这些挑战，我们对92个成功移植到OpenHarmony的C/ c++库进行了实证研究。
 通过手工分步再现所有CPC问题，我们的研究发现OpenHarmony与Linux之间的差异可以分为三类，CPC问题可以通过八个维度表现出来。
 此外，我们确定了解决CPC问题的八种常见适应策略。

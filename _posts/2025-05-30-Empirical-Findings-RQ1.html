@@ -1,19 +1,17 @@
 ---
 # layout: archives
-title: Empirical Findings ML Libraries
+title: Empirical Findings of RQ1 (Issue Types and Root Causes)
 autdor: Anonymous
 
 ---
 <!--test  -->
-
-  This table presents empirical findings of RQ3. Among the
-  577 defective APIs, we find clear clues to the root causes of inducing
-  pipelines’ performance inconsistencies, crashes and NaN bugs
-  for 270 APIs (46.8%), in tde corresponding library release notes,
-  issues and code commits. We identified four types of essential root
-  causes and discuss them in two scenarios: performance impacts
-  induced by one library version and performance impacts induced by
-  a combination of library versions.
+<!-- 一段对RQ1结果的描述 -->
+  Below is a table presenting the empirical research findings of RQ1. Among the 
+  92 C/C++ projects identified with patches, each *.patch file may contain multiple code segments. 
+  Each segment specifies modified source file paths and corresponding line numbers to address a CPI issue. 
+  From this, we summarized that discrepancies between OpenHarmony and Linux across three core aspects - 
+  (1) system libraries/runtime environments, (2) build systems, and (3) third-party library version requirements.
+   These issues typically manifest through eight dimensions.
 
   <div class="table-wrapper">
     <table id="data-table-basic" class="table table-striped">
