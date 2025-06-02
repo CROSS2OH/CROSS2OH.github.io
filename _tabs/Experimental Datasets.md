@@ -20,7 +20,7 @@ order: 4
 [**Download 46 real cases analyzed for CROSS2OH evaluation(benchmark)**](https://github.com/CROSS2OH/CROSS2OH.github.io)
 > A dataset containing CROSS2OH used in RQ3.
 {: .prompt-tip }
-[**A Dataset Containing CROSS2OH-Migrated C/C++ Third-Party Libraries**](https://github.com/CROSS2OH/CROSS2OH.github.io)
+[**A Dataset Containing CROSS2OH-Migrated C/C++ Third-Party Libraries**](http://cross2oh.github.io/posts/CROSS2OH-Migrated-Libraries/)
 <div id="d-help-win" class="d-help-win" >
     <div id="win-title">Help
         <span id="d-help-colse" clss="close_2" class="close_2">
