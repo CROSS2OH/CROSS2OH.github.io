@@ -24,7 +24,11 @@ mysql
 CTags
 curl
 cmake
+gcc, cmake, make, pkg-config, autoconf, autoreconf, automake
 ...(toolchains)
+<span style="color: #2697fa; font-weight: bold;">Note:</span>: The installation path of CTags must be explicitly recorded, as CROSS2OH requires this path to be configured for proper functionality during tool execution.
+//eg:
+sudo apt install cmake
 ```
 - Step 3
 
