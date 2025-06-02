@@ -7,16 +7,25 @@ order: 1
 <!-- (https://github.com/Piecer-plc/piecer-plc) -->
 [**CROSS2OH**](https://github.com/CROSS2OH/CROSS2OH.github.io)
 ## Run CROSS2OH
+
 - Step 1
 
-Download the source code and install the requirements.
+This tool runs in a Linux environment and requires prior configuration of the [OHOS SDK](https://gitee.com/openharmony-sig/tpc_c_cplusplus/blob/master/lycium/doc/ohos_use_sdk/OHOS_SDK-Usage.md) and downloading the [Lycium](https://gitcode.com/openharmony-sig/tpc_c_cplusplus) cross-compilation tool.
 ```java
-java -jar xx
+git clone https://gitcode.com/openharmony-sig/tpc_c_cplusplus.git
 ```
 - Step 2
 
 
-Download the source code and install the requirements.
+Download and configure CROSS2OH's dependencies
+```java
+//The list of dependencies for CROSS2OH
+mysql
+CTags
+curl
+cmake
+...(toolchains)
+```
 - Step 3
 
 Download the source code and install the requirements.
