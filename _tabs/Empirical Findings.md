@@ -18,6 +18,12 @@ order: 3
 <!-- RQ2:开发者的解决方案 -->
 [**Click for more details about empirical findings of RQ2.**](http://cross2oh.github.io/posts/Empirical-Findings-RQ2/)
 
+<!-- 添加一个表示所有CPI类型问题以及解决方案的图 -->
+<div style="text-align: center; margin-top: 1em; margin-bottom: 1em;">
+  <img src="/assets/images/CPI-Summary.png" alt="Summary of CPI Issue Types and Fixes" style="max-width: 100%; height: auto;">
+  <p style="font-size: 0.9em; color: gray;">Figure: Summary of CPI Issue Types and Fixes</p>
+</div>
+
 <div>
 <!-- TODO:动图 -->
 <!-- <img src="/assets/images/ML-Bug_tu.gif" alt="avatar"> -->
