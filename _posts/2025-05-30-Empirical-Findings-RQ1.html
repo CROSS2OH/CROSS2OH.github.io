@@ -18,31 +18,21 @@ autdor: Anonymous
 
       <tbody>
         <tr>
-          <th rowspan="2" colspan="3" style="text-align: center;margin:auto" >Root Causes</th>
-          <th  colspan="2" style="text-align: center">Crash</th>
-          <th  colspan="2" style="text-align: center">Execution Time</th>
-          <th  colspan="2" style="text-align: center">Competition Score</th>
-          <th  colspan="2" style="text-align: center">Memory Usage</th>
-          <th  colspan="2" style="text-align: center">NaN</th>
+          <th rowspan="1" colspan="1" style="text-align: center;margin:auto" >Issue Type</th>
+          <th  colspan="1" style="text-align: center">Description</th>
+          <th  colspan="1" style="text-align: center">Root Causes</th>
+          <th  colspan="1" style="text-align: center">#issues</th>
+          <th  colspan="1" style="text-align: center">#Ratio</th>
+          <th  colspan="1" style="text-align: center">Example Link</th>
         </tr>
           <tr>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
-            <th style="text-align: center">#Variants</th>
-            <th style="text-align: center">#Pipelines</th>
-          </tr>
-          <tr>
-            <th rowspan="8" style="vertical-align: middle;">Performance Impacts induced by one library version</th>
-            <th rowspan="5" style="vertical-align: middle;">API Optimization</th>
-            <td style="text-align: center">Hardware support</td>
+            <th rowspan="3" style="vertical-align: middle;">Type A (system libraries/runtime environments)</th>
+            <th style="text-align: center">CPI issues caused by system library and runtime
+environment discrepancies between OpenHarmony and Linux</td>
+            <!-- type A 1 -->
+            <td style="text-align: center">Inconsistent Native API Availability</td>
             <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
+
             <td style="text-align: center">92</td>
             <td style="text-align: center">5</td>
             <td style="text-align: center">7</td>
@@ -53,7 +43,8 @@ autdor: Anonymous
             <td style="text-align: center">-</td>
           </tr>
           <tr>
-            <td style="text-align: center">Data Processing</td>
+            <!-- type A 2 -->
+            <td style="text-align: center">Divergent Logical Path Encapsulation Conventions</td>
             <td style="text-align: center">-</td>
             <td style="text-align: center">-</td>
             <td style="text-align: center">501</td>
@@ -66,7 +57,8 @@ autdor: Anonymous
             <td style="text-align: center">-</td>
           </tr>
           <tr>
-            <td style="text-align: center">Calculations</td>
+            <!-- typeA 3 -->
+            <td style="text-align: center">Non-aligned Filesystem Hierarchy Structures</td>
             <td style="text-align: center">-</td>
             <td style="text-align: center">-</td>
             <td style="text-align: center">675</td>
@@ -77,71 +69,6 @@ autdor: Anonymous
             <td style="text-align: center">15</td>
             <td style="text-align: center">-</td>
             <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td style="text-align: center">Otders</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">41</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">8</td>
-            <td style="text-align: center">1</td>
-            <td style="text-align: center">15</td>
-            <td style="text-align: center">3</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td style="text-align: center">Sum</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">1,309</td>
-            <td style="text-align: center">36</td>
-            <td style="text-align: center">916</td>
-            <td style="text-align: center">28</td>
-            <td style="text-align: center">818</td>
-            <td style="text-align: center">32</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center">Default Hypermeter Change</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">30</td>
-            <td style="text-align: center">5</td>
-            <td style="text-align: center">25</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">17</td>
-            <td style="text-align: center">7</td>
-            <td style="text-align: center">9</td>
-            <td style="text-align: center">2</td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center">Technical Debt</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">47</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">9</td>
-            <td style="text-align: center">1</td>
-            <td style="text-align: center">92</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-          </tr>
-          <tr>
-            <td  colspan="2" style="text-align: center">API Breaking Change</td>
-            <td style="text-align: center">619</td>
-            <td style="text-align: center">35</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">-</td>
-            <td style="text-align: center">236</td>
-            <td style="text-align: center">12</td>
           </tr>
           <tr>
             <th rowspan="2" style="vertical-align: middle;">Performance Impacts induced by a combination of library versions</th>
@@ -155,19 +82,6 @@ autdor: Anonymous
             <td style="text-align: center">421</td>
             <td style="text-align: center">11</td>
             <td style="text-align: center">6</td>
-            <td style="text-align: center">3</td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center">Data Flow Interference</td>
-            <td style="text-align: center">17</td>
-            <td style="text-align: center">3</td>
-            <td style="text-align: center">1,114</td>
-            <td style="text-align: center">24</td>
-            <td style="text-align: center">661</td>
-            <td style="text-align: center">19</td>
-            <td style="text-align: center">501</td>
-            <td style="text-align: center">16</td>
-            <td style="text-align: center">4</td>
             <td style="text-align: center">3</td>
           </tr>
       </tbody>
