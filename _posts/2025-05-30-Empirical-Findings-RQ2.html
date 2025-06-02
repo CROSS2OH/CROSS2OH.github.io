@@ -22,8 +22,7 @@ author: Anonymous
           <th rowspan="1" colspan="1" style="text-align: center;margin:auto" >Issue Type</th>
           <th  colspan="1" style="text-align: center;width: 500px;">Description</th>
           <th  colspan="1" style="text-align: center">Root Causes</th>
-          <th  colspan="1" style="text-align: center">#issues</th>
-          <th  colspan="1" style="text-align: center">#Ratio</th>
+          <th  colspan="1" style="text-align: center">Strategy</th>
           <th  colspan="1" style="text-align: center">Example Link</th>
         </tr>
         <!-- 第一行 -->
@@ -33,8 +32,11 @@ author: Anonymous
 environment discrepancies between OpenHarmony and Linux</td>
             <!-- type A 1 -->
             <td style="text-align: center">Inconsistent Native API Availability</td>
-            <td style="text-align: center">51</td>
-            <td style="text-align: center">25.4%</td>
+            <td style="text-align: center"> (1) supplementing equivalent alternative APIs from
+musl/OpenHarmony kernel
+<br>
+ (2) implementing the APIs
+within *.patch files</td>
             <!-- 添加一个例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/openldap/openldap_oh_pkg.patch?init=initTree" target="_blank">OpenLDAP</a>
@@ -43,8 +45,8 @@ environment discrepancies between OpenHarmony and Linux</td>
           <tr>
             <!-- type A 2 -->
             <td style="text-align: center">Divergent Logical Path Encapsulation Conventions</td>
-            <td style="text-align: center">19</td>
-            <td style="text-align: center">9.4%</td>
+            <td style="text-align: center">eplace
+logical paths which reference header files with physical paths</td>
             <!-- 例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/Chipmunk2D/Chipmunk2D_oh_pkg.patch?init=initTree" target="_blank">Chipmunk2D</a>
@@ -53,8 +55,9 @@ environment discrepancies between OpenHarmony and Linux</td>
           <tr>
             <!-- typeA 3 -->
             <td style="text-align: center">Non-aligned Filesystem Hierarchy Structures</td>
-            <td style="text-align: center">38</td>
-            <td style="text-align: center">18.9%</td>
+            <td style="text-align: center">Employe path remapping by convert-
+ing the standard FHS hierarchy to OpenHarmony-compatible
+filesystem hierarchy</td>
             <!-- 例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/community/pulseaudio/pulseaudio_oh_pkg.patch?init=initTree" target="_blank">pulseaudio</a>
@@ -66,8 +69,8 @@ environment discrepancies between OpenHarmony and Linux</td>
             <th rowspan="4" style="vertical-align: middle;width: 500px;">OpenHarmony and Linux have discrepant build system</td>
             <!-- type B 1 -->
             <td style="text-align: center">Compiler-dependent Default Type Signedness Variations</td>
-            <td style="text-align: center">13</td>
-            <td style="text-align: center">6.5%</td>
+            <td style="text-align: center">Enforce the signedness
+of Char type</td>
             <!-- 添加一个例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/json-schema-validator/json-schema-validator_oh_pkg.patch?init=initTree" target="_blank">json-schema-validator</a>
@@ -76,8 +79,8 @@ environment discrepancies between OpenHarmony and Linux</td>
           <tr>
             <!-- type B 2 -->
             <td style="text-align: center">ISA-specific Compilation Configuration Mismatches</td>
-            <td style="text-align: center">10</td>
-            <td style="text-align: center">5%</td>
+            <td style="text-align: center">Incorporate ARM-specific compilation options in build configura-
+tions to ensure proper architectural support</td>
             <!-- 例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/cpp-httplib/cpp-httplib_oh_pkg.patch?init=initTree" target="_blank">cpp-httplib</a>
@@ -86,8 +89,9 @@ environment discrepancies between OpenHarmony and Linux</td>
           <tr>
             <!-- type B 3 -->
             <td style="text-align: center">Conditional Compilation Branch Inconsistencies</td>
-            <td style="text-align: center">60</td>
-            <td style="text-align: center">29.8%</td>
+            <td style="text-align: center">Extende the original OS-detection logic: 
+<br>(1)OpenHarmony-specific macro checks
+<br>(2)Build system identification </td>
             <!-- 例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/chrono/chrono_oh_pkg.patch?init=initTree" target="_blank">chrono</a>
@@ -96,8 +100,7 @@ environment discrepancies between OpenHarmony and Linux</td>
           <tr>
             <!-- type B 4 -->
             <td style="text-align: center">Differing C/C++ Standard Version Support Thresholds</td>
-            <td style="text-align: center">4</td>
-            <td style="text-align: center">2%</td>
+            <td style="text-align: center">Specify the OpenHarmony-supported version</td>
             <!-- 例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/protobuf_v3.6.1/protobuf-v3.6.1_oh_pkg.patch?init=initTree" target="_blank">protobuf</a>
@@ -110,24 +113,14 @@ environment discrepancies between OpenHarmony and Linux</td>
 pre-installed in OpenHarmony and Linux</td>
             <!-- type C 1 -->
             <td style="text-align: center">-</td>
-            <td style="text-align: center">4</td>
-            <td style="text-align: center">2%</td>
+            <td style="text-align: center">Ensure compatibility:
+              <br>
+(1)replacing incompatible APIs with their OpenHarmony equivalents
+<br>
+(2)implementing missing API implementation in *.patch files</td>
             <!-- 添加一个例子链接 -->
             <td style="text-align: center">
               <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/zbar/zbar_oh_pkg.patch?init=initTree" target="_blank">zbar</a>
-            </td>
-          </tr>
-          <!-- others -->
-          <tr>
-            <th rowspan="1" style="vertical-align: middle;">Others</th>
-            <th colspan="1" style="vertical-align: middle;">-</td>
-            <td style="text-align: center"> Discrepant warning messages thrown by
-the compiler toolchains</td>
-            <td style="text-align: center">2</td>
-            <td style="text-align: center">1%</td>
-            <!-- 添加一个例子链接 -->
-            <td style="text-align: center">
-              <a href="https://gitcode.com/openharmony-sig/tpc_c_cplusplus/blob/master/thirdparty/tinyexr/tinyexr_oh_pkg.patch?init=initTree" target="_blank">tinyexr</a>
             </td>
           </tr>
       </tbody>
