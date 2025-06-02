@@ -29,13 +29,28 @@ gcc, cmake, make, pkg-config, autoconf, autoreconf, automake
 //eg:
 sudo apt install cmake
 ```
-<span style="color: #2697fa; font-weight: bold;">Note:</span>: The installation path of CTags must be explicitly recorded, as CROSS2OH requires this path to be configured for proper functionality during tool execution.
+<span style="color: #2697fa; font-weight: bold;">Note:</span> The installation path of CTags must be explicitly recorded, as CROSS2OH requires this path to be configured for proper functionality during tool execution.
 - Step 3
-
-Download the source code and install the requirements.
+<!-- 配置path信息 -->
+Define the values of the following variables in PathUtil.java
 
 ```java
-java -jar xx
+    // The output path for detected CPI issues.
+    public static final String RESULTPATH = "aa/bb/cc";
+    // The tpc_c_cplusplus/thirdparty directory serves as the execution path for the cross-compilation process.
+    public static final String THIRDPARTY_PATH = "aa/bb/cc/tpc_c_cplusplus/thirdparty";
+    // The installation directory of the Lycium repository.
+    public static final String PATH = "aa/bb/cc/tpc_c_cplusplus";
+    // OHOS_SDK_PATH
+    public static final String OHOS_SDK_PATH = "aa/bb/cc/ohos_sdk_your_version/linux";
+    // The path to Lycium’s core execution script build.sh.
+    public static final String SCRIPT_PATH = "aa/bb/cc/tpc_c_cplusplus/lycium/build.sh";
+    // The path of CTags
+    public static final String CTAGS_PATH = "aa/bb/cc/ctags-your_version/ctags";
+    // The output path to generate CTags tag file.
+    public static final String CTAGS_OUTPUTFILEPATH = "aa/bb/cc/dd";
+    // The path for copying source files during patch generation.
+    public static final String TEMPDIRECTORYPATH = "aa/bb/cc/ee";
 ```
 - Step 4
 
@@ -53,7 +68,7 @@ java -jar xx
 
 Download the source code and install the requirements.
 ```java
-java -jar xx
+mvn clean 
 ```
 - Step 7
 
