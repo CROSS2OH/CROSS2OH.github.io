@@ -4,15 +4,15 @@ title: Empirical Findings of RQ2 (Adaptation Strategies)
 author: Anonymous
 ---
 <!--test  -->
-
-  This table presents empirical findings of RQ3. Among the
-  577 defective APIs, we find clear clues to the root causes of inducing
-  pipelines’ performance inconsistencies, crashes and NaN bugs
-  for 270 APIs (46.8%), in tde corresponding library release notes,
-  issues and code commits. We identified four types of essential root
-  causes and discuss them in two scenarios: performance impacts
-  induced by one library version and performance impacts induced by
-  a combination of library versions.
+<!-- 一段对RQ2的描述 -->
+  This table presents the empirical findings of RQ2.
+  To understand how developers resolve CPI issues in the *.patch files,
+  we analyzed adaptation code segments and their accompanying documentation from 
+  the openharmony-sig/tpc_c_cplusplus repository. For each adaptation, 
+  we collected commit logs and related developer notes as evidence. From this, 
+  we derived eight adaptation strategies that address all three types of CPI issues identified 
+  in RQ1. Effective adaptation requires developers to deeply understand the divergences between 
+  OpenHarmony and Linux, along with practical workarounds.
 
   <div class="table-wrapper">
     <table id="data-table-basic" class="table table-striped">
