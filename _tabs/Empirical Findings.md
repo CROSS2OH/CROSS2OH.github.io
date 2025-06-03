@@ -6,9 +6,8 @@ order: 3
 
 > CPC Issues Identified in 92 Real Subjects
 {: .prompt-info }
-<!-- 92项目中的cpc问题 -->
-[**Click for more details on CPC issues identified in 92 real cases.**](https://github.com/CROSS2OH/CROSS2OH.github.io)
-
+<!-- 实证研究使用的92个项目的详细信息 -->
+[**Click for more details on the 92 real cases used in the empirical study**](http://cross2oh.github.io/posts/Empirical-Real-Cases/)
 > Empirical findings of RQ1
 {: .prompt-info }
 <!-- RQ1:常见的cpc问题，根本原因 -->
