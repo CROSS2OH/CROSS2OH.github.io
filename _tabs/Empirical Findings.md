@@ -4,7 +4,7 @@ icon: fas fa-archive
 order: 3
 ---
 
-> CPC Issues Identified in 92 Real Subjects
+> CPI Issues Identified in 92 Real Subjects
 {: .prompt-info }
 <!-- 实证研究使用的92个项目的详细信息 -->
 [**Click for more details on the 92 real cases used in the empirical study**](http://cross2oh.github.io/posts/Empirical-Real-Cases/)
