@@ -87,7 +87,7 @@ Finally, CROSS2OH downloads the provided compressed package, completes the detec
         4.
         查看详细复现结果：
         动图！ -->
-        <img src="/assets/images/Pipeline-Bug.gif">
+        <!-- <img src="/assets/images/Pipeline-Bug.gif"> -->
     </div>
 </div>
  <div id="d-help-win" class="d-help-win" style="display: none;">

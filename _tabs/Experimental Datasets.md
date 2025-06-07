@@ -35,7 +35,7 @@ order: 4
         4.
         查看详细复现结果：
         动图！ -->
-        <img src="/assets/images/Pipeline-Bug.gif">
+        <!-- <img src="/assets/images/Pipeline-Bug.gif"> -->
     </div>
 </div>
 
