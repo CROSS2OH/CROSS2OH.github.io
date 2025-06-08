@@ -78,9 +78,9 @@ Finally, CROSS2OH downloads the provided compressed package, completes the detec
     </div>
     <div id="win-content">
         <blockquote class="prompt-tip"><div><p>The following GIF demonstrates an example of using CROSS2OH with the log4z library as the target C/C++ software to be ported. The process automatically performs the following steps:
-        <br> (1) an initial cross-compilation attempt, which fails and terminates due to errors;
-        <br> (2) running CROSS2OH to detect CPI issues and generate the corresponding *.patch files; 
-        <br> (3) repeating the cross-compilation, which now succeeds. 
+        <br> <strong>(1) an initial cross-compilation attempt, which fails and terminates due to errors;</strong>
+        <br> <strong>(2) running CROSS2OH to detect CPI issues and generate the corresponding *.patch files; </strong>
+        <br> <strong>(3) repeating the cross-compilation, which now succeeds. </strong>
         <br> Finally, we can observe that the resulting artifacts (e.g., *.a and *.h files) are generated in the lycium/usr directory. These artifacts are usable within the OpenHarmony environment. Additionally, the *.patch files and the cross-compilation log (build.log) can be found in the thirdparty/ directory.</p></div></blockquote>
         <img src="/assets/images/CROSS2OH-tool.gif" alt="avatar">
     </div>
