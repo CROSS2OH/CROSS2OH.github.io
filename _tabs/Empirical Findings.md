@@ -10,7 +10,7 @@ order: 3
 [**Click for more details on the 92 real cases used in the empirical study**](http://cross2oh.github.io/posts/Empirical-Real-Cases/)
 > Empirical findings of RQ1
 {: .prompt-info }
-<!-- RQ1:常见的cpc问题，根本原因 -->
+<!-- RQ1:常见的cpi问题，根本原因 -->
 [**Click for more details about empirical findings of RQ1.**](http://cross2oh.github.io/posts/Empirical-Findings-RQ1/)
 > Empirical findings of RQ2
 {: .prompt-info }
