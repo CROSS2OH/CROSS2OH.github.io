@@ -94,13 +94,7 @@ Finally, CROSS2OH downloads the provided compressed package, completes the detec
           </span>
       </div>
       <div id="win-content">
-          <blockquote class="prompt-tip"><div><p> xxx</p></div></blockquote>
-          <!-- <div>
-              <ol>
-                  <li>Go to <strong><font color="#FF0000">Empirical Findings</font></strong> page</li>
-                  <li>Select a bug and click on <strong><font color="#FF0000">reproduce result link</font></strong>.</li>
-                  <li>You can find the reproduction results of each version and the related reproduction code.</li></ol>
-          </div> -->
-          <!-- <img src="/assets/images/Pipeline-Bug.gif" alt="avatar"> -->
+          <blockquote class="prompt-tip"><div><p>CROSS2OH usage example</p></div></blockquote>
+          <img src="/assets/images/CROSS2OH-tool.gif" alt="avatar">
       </div>
   </div>
