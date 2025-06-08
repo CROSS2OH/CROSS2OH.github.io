@@ -77,24 +77,7 @@ Finally, CROSS2OH downloads the provided compressed package, completes the detec
         </span>
     </div>
     <div id="win-content">
-        <!-- 我们提供了xxx数据集。
-        1.
-        2.
-        3.
-        4.
-        查看详细复现结果：
-        动图！ -->
-        <!-- <img src="/assets/images/Pipeline-Bug.gif"> -->
+        <blockquote class="prompt-tip"><div><p>CROSS2OH usage example</p></div></blockquote>
+        <img src="/assets/images/CROSS2OH-tool.gif" alt="avatar">
     </div>
 </div>
- <div id="d-help-win" class="d-help-win" style="display: none;">
-      <div id="win-title">Help
-          <span id="d-help-colse" clss="close_2" class="close_2">
-              × 
-          </span>
-      </div>
-      <div id="win-content">
-          <blockquote class="prompt-tip"><div><p>CROSS2OH usage example</p></div></blockquote>
-          <img src="/assets/images/CROSS2OH-tool.gif" alt="avatar">
-      </div>
-  </div>
