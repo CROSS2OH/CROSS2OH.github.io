@@ -23,10 +23,6 @@ order: 3
   <p style="font-size: 0.9em; color: gray;">Figure: Summary of CPI Issue Types and Fixes</p>
 </div>
 
-<div>
-<!-- TODO:动图 -->
-<!-- <img src="/assets/images/ML-Bug_tu.gif" alt="avatar"> -->
-</div>
  <div id="d-help-win" class="d-help-win" style="display: none;">
       <div id="win-title">Help
           <span id="d-help-colse" clss="close_2" class="close_2">
@@ -34,13 +30,14 @@ order: 3
           </span>
       </div>
       <div id="win-content">
-          <blockquote class="prompt-tip"><div><p> xxx</p></div></blockquote>
-          <!-- <div>
+          <blockquote class="prompt-tip"><div><p> We provide the datasets used in the experiments, where the datasets and links of the empirical research part are as follows:</p></div></blockquote>
+          <div>
               <ol>
                   <li>Go to <strong><font color="#FF0000">Empirical Findings</font></strong> page</li>
-                  <li>Select a bug and click on <strong><font color="#FF0000">reproduce result link</font></strong>.</li>
-                  <li>You can find the reproduction results of each version and the related reproduction code.</li></ol>
-          </div> -->
-          <!-- <img src="/assets/images/Pipeline-Bug.gif" alt="avatar"> -->
+                  <li>Select a type and click on <strong><font color="#FF0000">example link</font></strong>.</li>
+                  <li>You can find the CPI issues and the developers’ solutions.</li></ol>
+          </div>
+
+          <img src="/assets/images/CROSS2OH-empirical.gif" alt="avatar">
       </div>
   </div>
