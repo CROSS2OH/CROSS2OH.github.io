@@ -32,7 +32,7 @@ sudo apt install cmake
 - Step 3
 
 <!-- 配置path信息 -->
-Define the values of the following variables in config.yaml,then place the config.yaml file in the same directory as the jar.
+We provided a config.yaml template file.Define the values of the following variables in config.yaml,then place the config.yaml file in the same directory as the jar.
 
 ```java
     // The output path for detected CPI issues.
@@ -63,10 +63,11 @@ Provide one or more download links to GitHub-hosted C/C++ libraries with specifi
 - Step 5
 
 Run.
-Note:At least two parameters need to be specified when running: 
+<br>
+<span style="color: #2697fa; font-weight: bold;">Note:</span>At least two parameters need to be specified when running: 
 The first parameter is the path to the config.yaml file, which sets up some necessary addresses. The second and subsequent arguments are the github download link for the c/ C ++ project to be ported.
 ```java
-java -jar CROSS2OH-SNAPSHOT-obfuscated.jar  /your/path/config.yaml https://github.com/zsummer/log4z/archive/refs/tags/v3.4.0.zip
+java -jar CROSS2OH-SNAPSHOT-obfuscated.jar  /your/path/config.yaml  https://github.com/zsummer/log4z/archive/refs/tags/v3.4.0.zip
 ```
 Finally, CROSS2OH downloads the provided compressed package, completes the detection of CPI issues, applies fixes to the identified problems, and generates corresponding *.patch files, which are stored in the configured THIRDPARTY_PATH.
 <div id="d-help-win" class="d-help-win" >
