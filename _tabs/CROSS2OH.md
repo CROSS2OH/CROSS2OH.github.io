@@ -32,44 +32,41 @@ sudo apt install cmake
 - Step 3
 
 <!-- 配置path信息 -->
-Define the values of the following variables in PathUtil.java
+Define the values of the following variables in config.yaml,then place the config.yaml file in the same directory as the jar.
 
 ```java
     // The output path for detected CPI issues.
-    public static final String RESULTPATH = "aa/bb/cc";
+    RESULTPATH : "aa/bb/cc";
     // The tpc_c_cplusplus/thirdparty directory serves as the execution path for the cross-compilation process.
-    public static final String THIRDPARTY_PATH = "aa/bb/cc/tpc_c_cplusplus/thirdparty";
+    THIRDPARTY_PATH : "aa/bb/cc/tpc_c_cplusplus/thirdparty";
     // The installation directory of the Lycium repository.
-    public static final String PATH = "aa/bb/cc/tpc_c_cplusplus";
+    PATH : "aa/bb/cc/tpc_c_cplusplus";
     // OHOS_SDK_PATH
-    public static final String OHOS_SDK_PATH = "aa/bb/cc/ohos_sdk_your_version/linux";
+    OHOS_SDK_PATH : "aa/bb/cc/ohos_sdk_your_version/linux";
     // The path to Lycium’s core execution script build.sh.
-    public static final String SCRIPT_PATH = "aa/bb/cc/tpc_c_cplusplus/lycium/build.sh";
+    SCRIPT_PATH : "aa/bb/cc/tpc_c_cplusplus/lycium/build.sh";
     // The path of CTags
-    public static final String CTAGS_PATH = "aa/bb/cc/ctags-your_version/ctags";
+    CTAGS_PATH : "aa/bb/cc/ctags-your_version/ctags";
     // The output path to generate CTags tag file.
-    public static final String CTAGS_OUTPUTFILEPATH = "aa/bb/cc/dd";
+    CTAGS_OUTPUTFILEPATH : "aa/bb/cc/dd";
     // The path for copying source files during patch generation.
-    public static final String TEMPDIRECTORYPATH = "aa/bb/cc/ee";
+    TEMPDIRECTORYPATH : "aa/bb/cc/ee";
 ```
-- Step 4
 
-Package the configured CROSS2OH into a JAR file.
-```java
-mvn clean package
-```
-- Step 5
+- Step 4
 
 Provide one or more download links to GitHub-hosted C/C++ libraries with specified version tags.
 ```java
 //example
 //https://github.com/zsummer/log4z/archive/refs/tags/v3.4.0.zip
 ```
-- Step 6
+- Step 5
 
 Run.
+Note:At least two parameters need to be specified when running: 
+The first parameter is the path to the config.yaml file, which sets up some necessary addresses. The second and subsequent arguments are the github download link for the c/ C ++ project to be ported.
 ```java
-java -jar CROSS2OH-1.0-SNAPSHOT-jar-with-dependencies.jar https://github.com/zsummer/log4z/archive/refs/tags/v3.4.0.zip
+java -jar CROSS2OH-SNAPSHOT-obfuscated.jar  /your/path/config.yaml https://github.com/zsummer/log4z/archive/refs/tags/v3.4.0.zip
 ```
 Finally, CROSS2OH downloads the provided compressed package, completes the detection of CPI issues, applies fixes to the identified problems, and generates corresponding *.patch files, which are stored in the configured THIRDPARTY_PATH.
 <div id="d-help-win" class="d-help-win" >
