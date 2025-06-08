@@ -62,9 +62,9 @@ Provide one or more download links to GitHub-hosted C/C++ libraries with specifi
 ```
 - Step 5
 
-Run.
+<span style="color: #2697fa; font-weight: bold;">Run.</span>
 <br>
-<span style="color: #2697fa; font-weight: bold;">Note:</span>At least two parameters need to be specified when running: 
+Note : At least two parameters need to be specified when running: 
 The first parameter is the path to the config.yaml file, which sets up some necessary addresses. The second and subsequent arguments are the github download link for the c/ C ++ project to be ported.
 ```java
 java -jar CROSS2OH-SNAPSHOT-obfuscated.jar  /your/path/config.yaml  https://github.com/zsummer/log4z/archive/refs/tags/v3.4.0.zip
