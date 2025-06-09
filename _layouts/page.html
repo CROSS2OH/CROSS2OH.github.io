@@ -38,7 +38,8 @@ layout: default
   <!-- panel -->
   <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
     <div id="d-help">
-      <img id="help-img" class="d-help-img" alt="help" src="/assets/images/help.gif">
+      <!-- <img id="help-img" class="d-help-img" alt="help" src="/assets/images/help.gif"> -->
+       <img id="help-img" class="d-help-img" alt="help" src="/assets/images/{{ page.help_gif | default: 'help.gif' }}">
     </div>
   </div>
   {% endunless %}
